@@ -1,3 +1,7 @@
+:root{
+  --timelineCol: black;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -317,4 +321,77 @@ li a:hover{
     position: relative;
     top: -45px;
     visibility: hidden;
+}
+
+.box1{
+  position: absolute;
+  border-right-style: solid;
+  border-right-color: var(--timelineCol);
+  left: 50%;
+  width: 10px;
+  height: 75px;
+}
+.box2{
+  position: absolute;
+  border-style: solid;
+  border-color: var(--timelineCol);
+  border-bottom-style:none;
+  left: 46%;
+  width: 120px;
+  height: 95px;
+}
+.box3{
+  position: absolute;
+  border-left-style: solid;
+  border-left-color: var(--timelineCol);
+  border-bottom-style: solid;
+  border-bottom-color: var(--timelineCol);
+  left: 46%;
+  width: 60px;
+  height: 50px;
+}
+.box4{
+  position: absolute;
+  border-right-style: solid;
+  border-right-color: var(--timelineCol);
+  border-bottom-style: solid;
+  border-bottom-color: var(--timelineCol);
+  left: 50.44%;
+  width: 61px;
+  height: 25px;
+  background-color: #333;
+}
+.box5{
+  position: absolute;
+  border-right-style: solid;
+  border-right-color: var(--timelineCol);
+  left: 49.9%;
+  width: 10px;
+  height: 80px;
+}
+.box6{
+  position: absolute;
+  border-style: solid;
+  border-color: var(--timelineCol);
+  border-bottom-style:none;
+  left: 40.7%;
+  width: 270px;
+  height: 180px;
+}
+.box7{
+  position: absolute;
+  border-style: solid;
+  border-color: var(--timelineCol);
+  border-bottom-style:none;
+  left: 35.7%;
+  width: 140px;
+  height: 128px;
+}
+.box8{
+  position: absolute;
+  border-right-style: solid;
+  border-right-color: var(--timelineCol);
+  left: 40.7%;
+  width: 270px;
+  height: 180px;
 }
