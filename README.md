@@ -1,5 +1,5 @@
 # personal
-Made by Michael Lam. The project was started on May 8th, 2017.
+Made by Michael Lam. The project was started on May 2nd, 2017.
 This project was made for professional purposes. It was meant
 to be a learning tool to get a deeper understanding of website
 design as well as HTML, CSS, JavaScript and Bootstrap.

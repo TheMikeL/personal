@@ -1,0 +1,92 @@
+.outline{
+	width: 100%;
+	height: 500pt;
+	background-color: white;
+	border-bottom-style: solid;
+	border-color: #e6e6e6;
+}
+.outline1{
+	width: 100%;
+	height: 500pt;
+	background-color: #333;
+border-bottom-style: solid;
+	border-color: #e6e6e6;
+}
+.outline2{
+	width: 100%;
+	height: 500pt;
+	background-color: #f2f2f2f2;
+	border-bottom-style: solid;
+	border-color: #333;
+}
+.AboutFormat{
+	height: 200pt;
+}
+.footier{
+	width: 100%;
+	height: 100pt;
+	color: white;
+	background-color: #333;
+}
+
+.WelcomeHeader{
+	position: relative;
+	font-size: 32pt;
+	text-align: center;
+	top: 40%;
+	margin: auto;
+}
+.AboutHeader{
+	position: relative;
+	font-size: 32pt;
+	text-align: center;
+	top: 70%;
+	color: #f2f2f2;
+	margin: auto;
+}
+.AboutText{
+	position: relative;
+	font-size: 14pt;
+	text-align: left;
+	color:#f2f2f2;
+	top: 40%;
+	margin: auto;
+}
+
+.ProjectHeader{
+	position: relative;
+	font-size: 25pt;
+	text-align: center;
+	width: 400pt;
+	height: 60pt;
+	padding-top: 10pt;
+	border-bottom-style: solid;
+	border-color: #333;
+	margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #bbb;
+}
+
+li {
+    float: left;
+border-right: 1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #9999ff;
+}
