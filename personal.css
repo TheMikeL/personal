@@ -280,6 +280,12 @@ li a:hover{
   padding: 5pt;
 }
 
+.mini{
+  width: 40pt;
+	height: 40pt;
+  padding: 5pt;
+}
+
 .expText{
   margin-top:20%;
   text-align: left;
