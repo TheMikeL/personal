@@ -280,6 +280,9 @@ li a:hover{
   padding: 5pt;
 }
 
+.miniwrap{
+  text-align:center;
+}
 .mini{
   width: 40pt;
 	height: 40pt;
