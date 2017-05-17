@@ -172,35 +172,80 @@ li a:hover{
 .tourGuideProj{
   background-image: url("projects/tourGuideHome.png");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size:contain;
   display: inline-block;
 	position: relative;
-	width: 100%;
-	height: 380pt;
+	width: 220pt;
+	height: 350pt;
 	margin-top: 30pt;
 	opacity: 1;
-	transition: opacity 0.4s ease-out;
+	transition: all 0.5s ease-out;
 }
 
 .tourGuideProj:hover{
+  background-image: url("projects/tourGuideHomeD.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
 	opacity: 0.6;
-	transition: opacity 0.5s ease-in;
+	transition: all 0.5s ease-in;
 }
 
-
-.projectDisplay{
+.rmlProj{
 	position: relative;
 	width: 100%;
-	height: 380pt;
+	height: 350pt;
 	margin-top: 30pt;
 	background-color: black;
 	opacity: 1;
-	transition: opacity 0.4s ease-out;
+	transition: all 0.8s ease-out;
 }
 
-.projectDisplay:hover{
+.rmlProj:hover{
 	opacity: 0.4;
-	transition: opacity 0.5s ease-in;
+	transition: all 0.8s ease-in;
+}
+
+.calendarProj{
+  background-image: url("projects/CalendarD2.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  display: inline-block;
+	position: relative;
+  margin:auto;
+	width: 100%;
+	height: 360px;
+	opacity: 1;
+	transition: all 0.8s ease-out;
+}
+
+.calendarProj:hover{
+  background-image: url("projects/CalendarD2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+	opacity: 0.6;
+	transition: all 0.8s ease-in;
+}
+
+.personalProj{
+  background-image: url("projects/personalD2.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  display: inline-block;
+	position: relative;
+  margin:auto;
+	width: 100%;
+	height: 345px;
+	opacity: 1;
+	transition: all 0.8s ease-out;
+}
+
+.personalProj:hover{
+  background-image: url("projects/personalD2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+	opacity: 0.6;
+	transition: all 0.8s ease-in;
 }
 
 .personalPic{
@@ -322,6 +367,8 @@ li a:hover{
     top: -45px;
     visibility: hidden;
 }
+
+
 
 .box1{
   position: absolute;
