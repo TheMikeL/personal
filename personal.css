@@ -195,9 +195,9 @@ li a:hover{
 
 .tourText{
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 50%;
-  height: 40pt;
+  padding: 25pt;
   margin-left: 5%;
   font-family: "Helvetica";
   font-size: 13pt;

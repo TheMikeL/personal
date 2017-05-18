@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="personal.css">
 
     <!-- Javascript Dependencies-->
-    <script type="text/javascript" src="dependencies/bootstrapFull/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="dependencies/bootstrapFull/js/tests/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="dependencies/bootstrapFull/dist/js/bootstrap.min.js"></script>
     <script src="dependencies/bootstrapFull/js/dropdown.js"></script>
     <script src="dependencies/wow.min.js"></script>
 
@@ -34,9 +34,7 @@
           </li>
       </ul>
   </head>
-
   <body>
-
     <!-- Home Section -->
     <div class="container-fluid noContainerPad">
       <a class="anchor" id="homeAnchor"></a>
@@ -49,7 +47,6 @@
         	and thank you for visiting my site. <br>
         </div>
       </div>
-
 
       <!-- About Section-->
       <a class="anchor" id="aboutAnchor"></a>
@@ -97,34 +94,36 @@
         <div class = "row">
           <div class ="col-md-1"></div>
           <div class ="col-md-4">
-            <div class = "tourGuideProj wow fadeIn" data-wow-duration="1s">
-            </div>
+            <div class ="tourText"> Queen's Tour Guide Application</div>
+            <button type="button" data-toggle="modal" data-target="#tourModal" class = "tourGuideProj wow fadeIn" data-wow-duration="1s">
+            </button>
           </div>
           <div class ="col-md-1"></div>
           <div class ="col-md-5">
-            <div class = "rmlProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-
-            </div>
+            <div class ="tourText"> RML </div>
+            <button type="button" data-toggle="modal" data-target="#rmlModal" class = "rmlProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            </button>
           </div>
         </div>
         <div class = "row">
           <div class ="col-md-1"></div>
           <div class ="col-md-5">
-            <div class = "calendarProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+            <div class ="tourText"> QLife | CMPE 320 C++ Project</div>
+            <button type="button" data-toggle="modal" data-target="#calendarModal" class = "calendarProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
 
-            </div>
+            </button>
           </div>
           <div class ="col-md-5">
-            <div class = "personalProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+            <div class ="tourText"> Personal Website </div>
+            <button type="button" data-toggle="modal" data-target="#personalModal" class = "personalProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
 
-            </div>
+            </button>
           </div>
         </div>
         <br><br>
       </div>
 
       <!-- Career section-->
-      <!-- https://bootsnipp.com/snippets/OWPj         https://bootsnipp.com/snippets/z4bEn-->
       <a class="anchor" id="careerAnchor"></a>
       <div class="row careerOutline noMargin">
         <div class="row AboutFormat">
@@ -224,8 +223,9 @@
                         <h4>Queen's University | Engineering Open House Volunteer | Nov 2015 - Present</h4>
                     </div>
                     <div class="timeline-body">
-                        <p>Spoke with prospective students about Queen’s University’s engineering program, extra-curricular activities and community.
-                          <b>Answered</b> any queries students had about Queen’s University.
+                        <p>Spoke with prospective students about Queen’s University’s engineering program,
+                          extra-curricular activities and community.<br>
+                          <b>Answered</b> any queries students had about Queen’s University.<br>
                           <b>Networked</b> with other volunteers to provide students with first-hand experiences.</p>
                     </div>
                 </div>
@@ -399,7 +399,6 @@
         </div>
       </div>
 
-
       <!--Footer-->
       <a class="anchor" id="contactAnchor"></a>
       <div class = "row footier noMargin">
@@ -421,6 +420,71 @@
         <div class="row">
             <div class="footerText">Feel Free to Contact Me!</div>
         </div>
+      </div>
+
+      <!-- Modals for projects-->
+      <div class="modal fade modalDown" id="tourModal" role="dialog">
+         <div class="modal-dialog">
+
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Queen's University Tour Guide Application</h4>
+             </div>
+             <div class="modal-body">
+               <p>Some text in the modal.</p>
+             </div>
+           </div>
+         </div>
+      </div>
+
+      <div class="modal fade modalDown" id="rmlModal" role="dialog">
+         <div class="modal-dialog">
+
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">RML | Start Up Project</h4>
+             </div>
+             <div class="modal-body">
+               <p>Some text in the modal.</p>
+             </div>
+           </div>
+         </div>
+      </div>
+
+      <div class="modal fade modalDown" id="calendarModal" role="dialog">
+         <div class="modal-dialog">
+
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">QLife | CMPE 320 C++ Project</h4>
+             </div>
+             <div class="modal-body">
+               <p>Some text in the modal.</p>
+             </div>
+           </div>
+         </div>
+      </div>
+
+      <div class="modal fade modalDown" id="personalModal" role="dialog">
+         <div class="modal-dialog">
+
+           <!-- Modal content-->
+           <div class="modal-content">
+             <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <h4 class="modal-title">Personal Website</h4>
+             </div>
+             <div class="modal-body">
+               <p>Some text in the modal.</p>
+             </div>
+           </div>
+         </div>
       </div>
 
     </div>
