@@ -3,7 +3,7 @@
   position: relative;
   padding: 1px 0;
   list-style: none;
-  font-weight: 300;
+  font-weight: normal;
 }
 .timeline .timeline-item {
   padding-left: 0;
@@ -31,11 +31,11 @@
 .timeline:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 1%;
   left: 0;
   bottom: 0;
   width: 50%;
-  height: 100% !important;
+  height: 99% !important;
   margin-left: 1px;
   border-right-width: 2px;
   border-right-style: solid;
@@ -594,7 +594,7 @@
   margin-bottom: 0;
 }
 .timeline .timeline-item > .timeline-event .timeline-heading h4 {
-  font-weight: 400;
+  font-weight: normal;
 }
 .timeline .timeline-item > .timeline-event .timeline-footer a {
   cursor: pointer;
@@ -646,18 +646,36 @@
   color: #888888;
   background: #fff;
 }
-.timeline .timeline-item > .timeline-point.timeline-point-success {
-  color: #72b92e;
+.timeline .timeline-item > .timeline-point.timeline-point-work {
+  color: #ff8080;
   background: #fff;
 }
-.timeline .timeline-item > .timeline-point.timeline-point-info {
-  color: #3e93cf;
+
+.timeline .timeline-item > .timeline-point.timeline-point-work:hover {
+  color: #b30000;
   background: #fff;
 }
-.timeline .timeline-item > .timeline-point.timeline-point-warning {
-  color: #d0aa42;
+
+.timeline .timeline-item > .timeline-point.timeline-point-vol {
+  color: #80ff80;
   background: #fff;
 }
+
+.timeline .timeline-item > .timeline-point.timeline-point-vol:hover {
+  color: #008000;
+  background: #fff;
+}
+
+.timeline .timeline-item > .timeline-point.timeline-point-school {
+  color: #9f80ff;
+  background: #fff;
+}
+
+.timeline .timeline-item > .timeline-point.timeline-point-school:hover {
+  color: #531aff;
+  background: #fff;
+}
+
 .timeline .timeline-item > .timeline-point.timeline-point-danger {
   color: #d25a4b;
   background: #fff;
@@ -667,7 +685,7 @@
   float: left;
   clear: left;
   width: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   top: 1px;
   width: 100%;
   margin-left: auto;
@@ -696,7 +714,11 @@
   background-color: #888888;
 }
 .timeline .timeline-label .label-primary {
-  background-color: #888888;
+  background-color: #3385ff;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  padding-left: 10pt;
+  padding-right: 10pt;
 }
 .timeline .timeline-label .label-info {
   background-color: #3e93cf;
