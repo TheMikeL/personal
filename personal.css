@@ -189,8 +189,22 @@ li a:hover{
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-	opacity: 0.6;
+	opacity: 0.8;
 	transition: all 0.5s ease-in;
+}
+
+.tourText{
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 40pt;
+  margin-left: 5%;
+  font-family: "Helvetica";
+  font-size: 13pt;
+  text-align:center;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  z-index: 50;
 }
 
 .rmlProj{
@@ -204,7 +218,7 @@ li a:hover{
 }
 
 .rmlProj:hover{
-	opacity: 0.4;
+	opacity: 0.8;
 	transition: all 0.8s ease-in;
 }
 
@@ -225,7 +239,7 @@ li a:hover{
   background-image: url("projects/CalendarD2.png");
   background-repeat: no-repeat;
   background-size: contain;
-	opacity: 0.6;
+	opacity: 0.8;
 	transition: all 0.8s ease-in;
 }
 
@@ -246,7 +260,7 @@ li a:hover{
   background-image: url("projects/personalD2.png");
   background-repeat: no-repeat;
   background-size: contain;
-	opacity: 0.6;
+	opacity: 0.8;
 	transition: all 0.8s ease-in;
 }
 
@@ -373,4 +387,8 @@ li a:hover{
 .timeline-label{
   font-family: Helvetica;
   font-size: 13pt;
+}
+
+.modalDown{
+  margin-top: 10%;
 }
