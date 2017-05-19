@@ -68,9 +68,11 @@ li a:hover{
   border-bottom-style: solid;
 	border-color: #e6e6e6;
 }
-.outlineBlack{
+.aboutOutline{
   position: relative;
 	padding-left: 15pt;
+  padding-top: 100pt;
+  padding-bottom:100pt;
 	width: 100%;
 	height: 100%;
 	background-color: #333;
@@ -133,7 +135,6 @@ li a:hover{
 	text-align: center;
 	top: 50%;
 	color: #f2f2f2;
-	margin: auto;
 }
 .AboutText{
 	position: relative;
@@ -141,7 +142,15 @@ li a:hover{
 	text-align: left;
 	color:#f2f2f2;
 	top: 40%;
-	margin: auto;
+}
+
+.personalPic{
+	background-image: url('other/meirl.png');
+	background-repeat: no-repeat;
+	height: 200pt;
+	width: 200pt;
+	margin:auto;
+	margin-top: 20%;
 }
 
 .whiteHeader{
@@ -263,15 +272,6 @@ li a:hover{
   background-size: contain;
 	opacity: 0.8;
 	transition: all 0.8s ease-in;
-}
-
-.personalPic{
-	background-image: url('other/ameirl.png');
-	background-repeat: no-repeat;
-	height: 200pt;
-	width: 200pt;
-	margin:auto;
-	margin-top: 20%;
 }
 
 .footerText{
