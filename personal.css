@@ -184,7 +184,7 @@ li a:hover{
 }
 
 .tourGuideProj{
-  background-image: url("projects/tourGuideHome.png");
+  background-image: url("projects/tourGuide/tourGuideHome.png");
   background-repeat: round;
   background-size:cover;
   display: inline-block;
@@ -197,7 +197,7 @@ li a:hover{
 }
 
 .tourGuideProj:hover{
-  background-image: url("projects/tourGuideHomeD.png");
+  background-image: url("projects/tourGuide/tourGuideHomeD.png");
   background-repeat: round;
   background-size: contain;
   display: inline-block;
@@ -236,7 +236,7 @@ li a:hover{
 }
 
 .calendarProj{
-  background-image: url("projects/CalendarD.png");
+  background-image: url("projects/calendar/CalendarD.png");
   background-repeat: round;
   background-size:contain;
   display: inline-block;
@@ -249,7 +249,7 @@ li a:hover{
 }
 
 .calendarProj:hover{
-  background-image: url("projects/CalendarD.png");
+  background-image: url("projects/calendar/CalendarD.png");
   background-repeat: round;
   background-size: contain;
 	opacity: 0.8;
@@ -257,7 +257,7 @@ li a:hover{
 }
 
 .personalProj{
-  background-image: url("projects/personalD.png");
+  background-image: url("projects/personal/personalD.png");
   background-repeat: round;
   background-size:contain;
   display: inline-block;
@@ -270,7 +270,7 @@ li a:hover{
 }
 
 .personalProj:hover{
-  background-image: url("projects/personalD.png");
+  background-image: url("projects/personal/personalD.png");
   background-repeat: round;
   background-size: contain;
 	opacity: 0.8;
