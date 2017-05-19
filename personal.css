@@ -338,16 +338,27 @@ li a:hover{
 }
 
 .android{
-  width: 110pt;
-	height: 90pt;
-  padding: 5pt;
+  width: 80pt;
+	height: 60pt;
+}
+
+.python{
+  width: 70pt;
+  height: 70pt;
+  padding:5pt;
 }
 
 .small{
 	width: 70pt;
 	height: 70pt;
-  padding: 5pt;
+  padding: 10pt;
 }
+
+.smaller{
+	width: 60pt;
+	height: 60pt;
+}
+
 
 .miniwrap{
   text-align:center;
