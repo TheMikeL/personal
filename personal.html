@@ -5,7 +5,7 @@
 <!-- Header Transparent at top but not transparent lower-->
   <head>
     <!-- CSS Dependecies-->
-    <link rel="stylesheet" href="dependencies/bootstrapFull/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dependencies/bootstrapFull/dist/css/bootstrap.css">
     <link rel="stylesheet" href="dependencies/animate.css">
     <link rel="stylesheet" href="dependencies/bootstrap-timeline/timeline.css">
     <link rel="stylesheet" href="personal.css">
@@ -13,22 +13,23 @@
     <!-- Javascript Dependencies-->
     <script type="text/javascript" src="dependencies/bootstrapFull/js/tests/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="dependencies/bootstrapFull/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dependencies/bootstrapFull/js/carousel.js"></script>
     <script src="dependencies/wow.min.js"></script>
 
     <link rel="shortcut icon" href="other/TabPic.png"/>
     <title>Michael Lam</title>
 
      <ul class="nav navbar-nav navbar-right"> <!-- entire bar-->
-          <li><a class="nameHeader" href="#homeAnchor">Michael Lam </a></li>
+          <li><a class="nameHeader" href="#anchorHome">Michael Lam </a></li>
           <li class="dropdown pull-right">
             <a href="#" class="dropdown-toggle dropdownWhite" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                <span class="glyphicon glyphicon-menu-hamburger"></a> <!-- Actual button-->
             <ul class="dropdown-menu">
-              <li><a class="dropdownBar" href="#aboutAnchor">About</a></li>
-              <li><a class="dropdownBar" href="#projectAnchor">Projects</a></li>
-              <li><a class="dropdownBar" href="#careerAnchor">Career</a></li>
-              <li><a class="dropdownBar" href="#programAnchor">Programming</a></li>
-              <li><a class="dropdownBar" href="#contactAnchor">Contact Me</a></li>
+              <li><a class="dropdownBar" href="#anchorAbout">About</a></li>
+              <li><a class="dropdownBar" href="#anchorProject">Projects</a></li>
+              <li><a class="dropdownBar" href="#anchorCareer">Career</a></li>
+              <li><a class="dropdownBar" href="#anchorProgram">Programming</a></li>
+              <li><a class="dropdownBar" href="#anchorContact">Contact Me</a></li>
             </ul>
           </li>
       </ul>
@@ -36,7 +37,7 @@
   <body>
     <!-- Home Section -->
     <div class="container-fluid noContainerPad">
-      <a class="anchor" id="homeAnchor"></a>
+      <a class="anchor" id="anchorHome"></a>
       <div class="row homeOutline noMargin homeBackground">
         <div class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
         	Welcome. <br>
@@ -48,7 +49,7 @@
       </div>
 
       <!-- About Section-->
-      <a class="anchor" id="aboutAnchor"></a>
+      <a class="anchor" id="anchorAbout"></a>
       <div class=" row aboutOutline noMargin">
         <div class = "col-md-7">
           <div class="row AboutFormat">
@@ -83,7 +84,7 @@
       </div>
 
       <!-- Project Section-->
-      <a class="anchor" id="projectAnchor"></a>
+      <a class="anchor" id="anchorProject"></a>
       <div class ="row projOutline noMargin">
         <div class ="row">
         	<div class="whiteHeader">
@@ -119,7 +120,7 @@
       </div>
 
       <!-- Career section-->
-      <a class="anchor" id="careerAnchor"></a>
+      <a class="anchor" id="anchorCareer"></a>
       <div class="row careerOutline noMargin">
         <div class="row AboutFormat">
           <div class = "blackHeader">
@@ -318,7 +319,7 @@
       </div>
 
       <!-- Programming Section-->
-      <a class="anchor" id="programAnchor"></a>
+      <a class="anchor" id="anchorProgram"></a>
       <div class="row progOutline noMargin">
         <div class="row expFormat">
           <div class = "whiteHeader">
@@ -393,7 +394,7 @@
       </div>
 
       <!--Footer-->
-      <a class="anchor" id="contactAnchor"></a>
+      <a class="anchor" id="anchorContact"></a>
       <div class = "row footier noMargin">
         <br>
         <div class="row">
@@ -452,7 +453,7 @@
                      </div>
 
                      <!-- Left and right controls -->
-                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                     <a class="left carousel-control" href="#myCarousel" data-slide= "next">
                        <span class="glyphicon glyphicon-chevron-left"></span>
                        <span class="sr-only">Previous</span>
                      </a>
@@ -546,7 +547,7 @@
         $('.dropdown-toggle').dropdown()
       });
 
-      $('a').click(function(){
+      $('a[href*="#anchor"]').click(function(){
         $('html, body').animate({
           scrollTop: $( $(this).attr('href') ).offset().top
         }, 1000); //Integer value = scroll speed (high is slow)
