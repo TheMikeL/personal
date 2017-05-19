@@ -193,16 +193,17 @@ li a:hover{
 	transition: all 0.5s ease-in;
 }
 
-.tourText{
+.projText{
   position: absolute;
-  top: 45%;
+  top: 40%;
   width: 60%;
   padding: 25pt;
   margin-left: 15%;
   font-family: "Helvetica";
   font-size: 13pt;
+  border-radius: 15pt;
   text-align:center;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.9);
   color: white;
   z-index: 50;
 }
