@@ -81,10 +81,12 @@ li a:hover{
 	border-color: #e6e6e6;
 }
 
-.outlineWhite{
+.projOutline{
   position: relative;
 	padding-left: 15pt;
 	padding-right: 15pt;
+  padding-top: 5pt;
+  padding-bottom: 15pt;
 	width: 100%;
 	height: 100%;
 	background-color: #f2f2f2f2;
