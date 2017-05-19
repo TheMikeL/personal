@@ -173,11 +173,11 @@ li a:hover{
 
 .tourGuideProj{
   background-image: url("projects/tourGuideHome.png");
-  background-repeat: no-repeat;
-  background-size:contain;
+  background-repeat: round;
+  background-size:cover;
   display: inline-block;
 	position: relative;
-	width: 220pt;
+	width: 100%;
 	height: 350pt;
 	margin-top: 30pt;
 	opacity: 1;
@@ -186,7 +186,7 @@ li a:hover{
 
 .tourGuideProj:hover{
   background-image: url("projects/tourGuideHomeD.png");
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size: contain;
   display: inline-block;
 	opacity: 0.8;
@@ -196,9 +196,9 @@ li a:hover{
 .tourText{
   position: absolute;
   top: 45%;
-  width: 50%;
+  width: 60%;
   padding: 25pt;
-  margin-left: 5%;
+  margin-left: 15%;
   font-family: "Helvetica";
   font-size: 13pt;
   text-align:center;
@@ -223,42 +223,42 @@ li a:hover{
 }
 
 .calendarProj{
-  background-image: url("projects/CalendarD2.png");
-  background-repeat: no-repeat;
+  background-image: url("projects/CalendarD.png");
+  background-repeat: round;
   background-size:contain;
   display: inline-block;
 	position: relative;
-  margin:auto;
+  margin-top: 30pt;
 	width: 100%;
-	height: 360px;
+	height: 350pt;
 	opacity: 1;
 	transition: all 0.8s ease-out;
 }
 
 .calendarProj:hover{
-  background-image: url("projects/CalendarD2.png");
-  background-repeat: no-repeat;
+  background-image: url("projects/CalendarD.png");
+  background-repeat: round;
   background-size: contain;
 	opacity: 0.8;
 	transition: all 0.8s ease-in;
 }
 
 .personalProj{
-  background-image: url("projects/personalD2.png");
-  background-repeat: no-repeat;
+  background-image: url("projects/personalD.png");
+  background-repeat: round;
   background-size:contain;
   display: inline-block;
 	position: relative;
-  margin:auto;
+  margin-top: 30pt;
 	width: 100%;
-	height: 345px;
+	height: 350pt;
 	opacity: 1;
-	transition: all 0.8s ease-out;
+	transition: all 0.8s ease;
 }
 
 .personalProj:hover{
-  background-image: url("projects/personalD2.png");
-  background-repeat: no-repeat;
+  background-image: url("projects/personalD.png");
+  background-repeat: round;
   background-size: contain;
 	opacity: 0.8;
 	transition: all 0.8s ease-in;
