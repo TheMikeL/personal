@@ -123,17 +123,17 @@
           <div class = "blackHeader">
             Career
           </div>
-          <br>
           <div class="timeline timeline-line-solid wow fadeInDownBig" data-wow-offset="-300" data-wow-duration="1s">
             <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
                 <span class="label label-primary">Past</span>
             </span>
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time1" class="timeline-point timeline-point-vol">
+                <div id="time1" class="timeline-point timeline-point-vol"
+                data-toggle="tooltip" title="<img src='timeline/SLI.png ' />" data-placement="right">
                 </div>
                 <div id="event1" class="timeline-event">
                     <div class="timeline-heading">
-                        <h4>Sidney Ledson Institute | Volunteer Teaching Assistant | July 2012 - Aug 2012</h4>
+                        <h4 data-toggle="tooltip">Sidney Ledson Institute | Volunteer Teaching Assistant | July 2012 - Aug 2012</h4>
                     </div>
                     <div class="timeline-body">
                         <p>Assisted teachers with their classes ranging from pre-school to grade 6.</p>
@@ -149,7 +149,8 @@
             </span>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time2" class="timeline-point timeline-point-school">
+                <div id="time2" class="timeline-point timeline-point-school"
+                data-toggle="tooltip" title="<img src='timeline/queens2.png ' />" data-placement="right">
                 </div>
                 <div id="event2" class="timeline-event">
                     <div class="timeline-heading">
@@ -177,7 +178,8 @@
             </span>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time3" class="timeline-point timeline-point-work">
+                <div id="time3" class="timeline-point timeline-point-work"
+                data-toggle="tooltip" title="<img src='timeline/toyota.png ' />" data-placement="right">
                 </div>
                 <div id="event3" class="timeline-event">
                     <div class="timeline-heading">
@@ -192,7 +194,8 @@
             </div>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time4" class="timeline-point timeline-point-work">
+                <div id="time4" class="timeline-point timeline-point-work"
+                data-toggle="tooltip" title="<img src='timeline/queens2.png ' />" data-placement="right">
                 </div>
                 <div id="event4" class="timeline-event">
                     <div class="timeline-heading">
@@ -208,7 +211,8 @@
             </div>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time5" class="timeline-point timeline-point-vol"></div>
+                <div id="time5" class="timeline-point timeline-point-vol"
+                data-toggle="tooltip" title="<img src='timeline/queens2.png ' />" data-placement="right"></div>
                 <div id="event5" class="timeline-event">
                     <div class="timeline-heading">
                         <h4>Queen's University | Engineering Open House Volunteer | Nov 2015 - Present</h4>
@@ -216,6 +220,9 @@
                     <div class="timeline-body">
                         <p>Spoke with prospective students about Queen’s
                           University’s engineering program, extra-curricular activities and community.</p>
+                    </div>
+                    <div class="timeline-footer">
+                        <p class="text-right">Volunteer</p>
                     </div>
                 </div>
             </div>
@@ -225,7 +232,8 @@
             </span>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time6" class="timeline-point timeline-point-work">
+                <div id="time6" class="timeline-point timeline-point-work"
+                data-toggle="tooltip" title="<img src='timeline/linda.png ' />" data-placement="right">
                 </div>
                 <div id="event6" class="timeline-event">
                     <div class="timeline-heading">
@@ -239,7 +247,8 @@
             </div>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time7" class="timeline-point timeline-point-work">
+                <div id="time7" class="timeline-point timeline-point-work"
+                data-toggle="tooltip" title="<img src='timeline/lindt2.png ' />" data-placement="right">
                 </div>
                 <div id="event7" class="timeline-event">
                     <div class="timeline-heading">
@@ -258,7 +267,8 @@
             </span>
 
             <div class="timeline-item wow fadeIn" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time8" class="timeline-point timeline-point-vol">
+                <div id="time8" class="timeline-point timeline-point-vol"
+                data-toggle="tooltip" title="<img src='timeline/aiesec.png ' />" data-placement="right">
                 </div>
                 <div id="event8" class="timeline-event">
                     <div class="timeline-heading">
@@ -271,7 +281,8 @@
             </div>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time9" class="timeline-point timeline-point-work">
+                <div id="time9" class="timeline-point timeline-point-work"
+                data-toggle="tooltip" title="<img src='timeline/ontario.png ' />" data-placement="right">
                 </div>
                 <div id="event9" class="timeline-event">
                     <div class="timeline-heading">
@@ -611,6 +622,11 @@
       new WOW().init();
 
       $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+          html: true
+        });
+        $('.dropdown-toggle').dropdown();
+
         $('#event1').hide();
         $('#event2').hide();
         $('#event3').hide();
@@ -620,7 +636,6 @@
         $('#event7').hide();
         $('#event8').hide();
         $('#event9').hide();
-        $('.dropdown-toggle').dropdown();
         $('#time1').click(function(){
           $('#event1').toggle(1000);
         });
