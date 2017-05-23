@@ -634,6 +634,22 @@
   animation-name: fadeInLeft;
 }
 
+@keyframes fadeInLeftC {
+  from {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeftC {
+  animation-name: fadeInLeftC;
+}
+
 @keyframes fadeInLeftBig {
   from {
     opacity: 0;
@@ -664,6 +680,22 @@
 
 .fadeInRight {
   animation-name: fadeInRight;
+}
+
+@keyframes fadeInRightC {
+  from {
+    opacity: 0;
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRightC {
+  animation-name: fadeInRightC;
 }
 
 @keyframes fadeInRightBig {

@@ -3,7 +3,7 @@
   position: relative;
   padding: 1px 0;
   list-style: none;
-  font-weight: normal;
+  font-weight: 300;
 }
 .timeline .timeline-item {
   padding-left: 0;
@@ -31,11 +31,11 @@
 .timeline:before {
   content: "";
   position: absolute;
-  top: 6%;
+  top: 1%;
   left: 0;
   bottom: 0;
   width: 50%;
-  height: 95% !important;
+  height: 99% !important;
   margin-left: 1px;
   border-right-width: 2px;
   border-right-style: solid;
@@ -583,15 +583,8 @@
 .timeline .timeline-item > .timeline-event .timeline-heading,
 .timeline .timeline-item > .timeline-event .timeline-body,
 .timeline .timeline-item > .timeline-event .timeline-footer {
-  border-bottom: 1px solid #e5e5e5;
-  padding-left: 8px;
-  padding-bottom: 10px;
-  padding-top: 5px;
+  padding: 4px 10px;
 }
-.timeline .timeline-item > .timeline-event .timeline-footer {
-  padding-right: 10px;
-}
-
 .timeline .timeline-item > .timeline-event .timeline-heading p,
 .timeline .timeline-item > .timeline-event .timeline-body p,
 .timeline .timeline-item > .timeline-event .timeline-footer p,
@@ -601,8 +594,7 @@
   margin-bottom: 0;
 }
 .timeline .timeline-item > .timeline-event .timeline-heading h4 {
-  font-size: 13.5pt;
-  font-weight: normal;
+  font-weight: 400;
 }
 .timeline .timeline-item > .timeline-event .timeline-footer a {
   cursor: pointer;
@@ -654,6 +646,61 @@
   color: #888888;
   background: #fff;
 }
+.timeline .timeline-item > .timeline-point.timeline-point-success {
+  color: #72b92e;
+  background: #fff;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-info {
+  color: #3e93cf;
+  background: #fff;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-warning {
+  color: #d0aa42;
+  background: #fff;
+}
+.timeline .timeline-item > .timeline-point.timeline-point-danger {
+  color: #d25a4b;
+  background: #fff;
+}
+.timeline .timeline-label {
+  position: relative;
+  float: left;
+  clear: left;
+  width: 50%;
+  margin-bottom: 20px;
+  top: 1px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: center;
+}
+.timeline .timeline-label:before,
+.timeline .timeline-label:after {
+  content: "";
+  display: table;
+}
+.timeline .timeline-label:after {
+  clear: both;
+}
+.timeline .timeline-label:last-child {
+  margin-bottom: 0 !important;
+}
+.timeline .timeline-label + .timeline-item:not(.timeline-item-left):not(.timeline-item-right) {
+  margin-top: 0;
+}
+.timeline .timeline-label + .timeline-item:not(.timeline-item-left):not(.timeline-item-right) + .timeline-item:not(.timeline-item-left):not(.timeline-item-right) {
+  margin-top: 40px;
+}
+.timeline .timeline-label .label-default {
+  background-color: #4d94ff;
+}
+.timeline .timeline-label .label-primary {
+  padding-top: 5px;
+  background-color: #4d94ff;
+  font-size: 12pt;
+}
+
 .timeline .timeline-item > .timeline-point.timeline-point-work {
   color: #ff8080;
   background: #fff;
@@ -682,52 +729,6 @@
 .timeline .timeline-item > .timeline-point.timeline-point-school:hover {
   color: #531aff;
   background: #ccc;
-}
-
-.timeline .timeline-item > .timeline-point.timeline-point-danger {
-  color: #d25a4b;
-  background: #fff;
-}
-.timeline .timeline-label {
-  position: relative;
-  float: left;
-  clear: left;
-  width: 50%;
-  top:25px;
-  margin-bottom: 20px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  text-align: center;
-}
-
-.timeline .timeline-label:before,
-.timeline .timeline-label:after {
-  content: "";
-  display: table;
-}
-.timeline .timeline-label:after {
-  clear: both;
-}
-.timeline .timeline-label:last-child {
-  margin-bottom: 0 !important;
-}
-.timeline .timeline-label + .timeline-item:not(.timeline-item-left):not(.timeline-item-right) {
-  margin-top: 0;
-}
-.timeline .timeline-label + .timeline-item:not(.timeline-item-left):not(.timeline-item-right) + .timeline-item:not(.timeline-item-left):not(.timeline-item-right) {
-  margin-top: 40px;
-}
-.timeline .timeline-label .label-default {
-  background-color: #888888;
-}
-.timeline .timeline-label .label-primary {
-  background-color: #3385ff;
-  padding-top: 5pt;
-  padding-bottom: 5pt;
-  padding-left: 10pt;
-  padding-right: 10pt;
 }
 .timeline .timeline-label .label-info {
   background-color: #3e93cf;
