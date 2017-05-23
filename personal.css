@@ -236,7 +236,7 @@ li a:hover{
 }
 
 .calendarProj{
-  background-image: url("projects/calendar/CalendarD.png");
+  background-image: url("projects/calendar/qLifeMain2.png");
   background-repeat: round;
   background-size:contain;
   display: inline-block;
@@ -406,4 +406,18 @@ li a:hover{
 
 .modalDown{
   margin-top: 5%;
+}
+
+.carouselPic{
+  width: 260px;
+  height: 384px;
+  margin:none;
+  padding: none;
+}
+
+.calCarouselPic{
+  width: 350px;
+  height: 450px;
+  margin:none;
+  padding: none;
 }
