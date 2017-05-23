@@ -586,10 +586,26 @@
   animation-name: fadeInDown;
 }
 
+@keyframes fadeInDownC {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDownC {
+  animation-name: fadeInDownC;
+}
+
 @keyframes fadeInDownBig {
   from {
     opacity: 0;
-    transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -100px, 0);
   }
 
   to {
