@@ -661,7 +661,7 @@
 
 .timeline .timeline-item > .timeline-point.timeline-point-work:hover {
   color: #b30000;
-  background: #fff;
+  background: #ccc;
 }
 
 .timeline .timeline-item > .timeline-point.timeline-point-vol {
@@ -671,7 +671,7 @@
 
 .timeline .timeline-item > .timeline-point.timeline-point-vol:hover {
   color: #008000;
-  background: #fff;
+  background: #ccc;
 }
 
 .timeline .timeline-item > .timeline-point.timeline-point-school {
@@ -681,7 +681,7 @@
 
 .timeline .timeline-item > .timeline-point.timeline-point-school:hover {
   color: #531aff;
-  background: #fff;
+  background: #ccc;
 }
 
 .timeline .timeline-item > .timeline-point.timeline-point-danger {
