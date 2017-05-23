@@ -583,8 +583,15 @@
 .timeline .timeline-item > .timeline-event .timeline-heading,
 .timeline .timeline-item > .timeline-event .timeline-body,
 .timeline .timeline-item > .timeline-event .timeline-footer {
-  padding: 4px 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 8px;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
+.timeline .timeline-item > .timeline-event .timeline-footer {
+  padding-right: 10px;
+}
+
 .timeline .timeline-item > .timeline-event .timeline-heading p,
 .timeline .timeline-item > .timeline-event .timeline-body p,
 .timeline .timeline-item > .timeline-event .timeline-footer p,
@@ -594,6 +601,7 @@
   margin-bottom: 0;
 }
 .timeline .timeline-item > .timeline-event .timeline-heading h4 {
+  font-size: 13.5pt;
   font-weight: normal;
 }
 .timeline .timeline-item > .timeline-event .timeline-footer a {
