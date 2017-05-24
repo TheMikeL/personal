@@ -38,7 +38,7 @@
     <!-- Home Section -->
     <div class="container-fluid noContainerPad">
       <a class="anchor" id="anchorHome"></a>
-      <div class="row homeOutline noMargin homeBackground">
+      <div id="homeRow" class="row homeOutline noMargin homeBackground">
         <div class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
         	Welcome. <br>
           <!--Let's Take a Journey through my Career! -->
@@ -630,6 +630,18 @@
     </div>
     <script>
       new WOW().init();
+        var scrolled = false;
+      $(window).scroll(function() {
+
+          //if I scroll more than 1000px...
+          if($(window).scrollTop() > 100 && scrolled == false){
+               $('html,body').animate({scrollTop : $('#anchorProject').offset().top}, 500, function(){
+              });
+            scrolled = true;
+          } else if($(window).scrollTop() == 0) {
+            scrolled = false;
+          }
+      });
 
       $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip({
@@ -637,9 +649,9 @@
         });
         $('.dropdown-toggle').dropdown();
 
-        $(window).scroll(function() {
-          
-        });
+
+
+
 
       });
 
