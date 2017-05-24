@@ -630,17 +630,37 @@
     </div>
     <script>
       new WOW().init();
-        var scrolled = false;
+        var scrolled = 0;
       $(window).scroll(function() {
+            if(($(window).scrollTop() > 80 && $(window).scrollTop() < 450)  && scrolled == 0){
+                 $('html,body').animate({scrollTop : $('#anchorAbout').offset().top}, 500, function(){
+                   scrolled = 1;
+                 });
+                 scrolled = 1;
 
-          //if I scroll more than 1000px...
-          if($(window).scrollTop() > 100 && scrolled == false){
-               $('html,body').animate({scrollTop : $('#anchorProject').offset().top}, 500, function(){
-              });
-            scrolled = true;
-          } else if($(window).scrollTop() == 0) {
-            scrolled = false;
-          }
+            }
+            if(($(window).scrollTop() >= 700 && $(window).scrollTop() <= 850) && scrolled == 1){
+                 $('html,body').animate({scrollTop : $('#anchorProject').offset().top}, 500, function(){
+                   scrolled = 2;
+                 });
+                 scrolled = 2;
+            }
+            if(($(window).scrollTop() >= 1400 && $(window).scrollTop() <= 1700) && scrolled == 2){
+                 $('html,body').animate({scrollTop : $('#anchorCareer').offset().top}, 500, function(){
+                   scrolled = 3;
+                 });
+                 scrolled = 3;
+            }
+            if(($(window).scrollTop() > 2750 && $(window).scrollTop() < 2950) && scrolled == 3){
+                scrolled = 4;
+                 $('html,body').animate({scrollTop : $('#anchorProgram').offset().top}, 500, function(){
+                   scrolled = 4;
+                 });
+                 scrolled = 4;
+            }
+              else if($(window).scrollTop() == 0) {
+              scrolled = 0;
+            }
       });
 
       $(document).ready(function(){
@@ -648,11 +668,6 @@
           html: true
         });
         $('.dropdown-toggle').dropdown();
-
-
-
-
-
       });
 
       $('a[href*="#anchor"]').click(function(){
