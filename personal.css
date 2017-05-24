@@ -35,6 +35,7 @@ li a:hover{
   background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-size:cover;
+  background-color: #f2f2f2;
 }
 
 .WelcomeHeader{
@@ -329,6 +330,9 @@ li a:hover{
 .bBold{
   background-color:inherit;
   border-style:none;
+  color: #333;
+  text-decoration: none;
+  font-size: 8pt;
 }
 
 .medium{
