@@ -342,8 +342,8 @@
             <div class="col-md-6">
               <img src="progLang/html5.png" class ="medium">
               <img src="progLang/css3.png" class ="medium">
-              <img src="progLang/testing.png" class ="medium">
-              <img src="progLang/photoshop.png" class ="medium">
+              <img src="progLang/testing.png" class ="medium" >
+              <img src="progLang/photoshop.png" class ="medium"  data-toggle="tooltip" title="PhotoShop">
               <img src="progLang/gitExp.png" class ="medium">
             </div>
           </div>
@@ -369,8 +369,8 @@
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-2">
-              <img src="progLang/android.png" class ="android">
-              <img src="progLang/javascript.png" class ="smaller">
+              <img src="progLang/android.png" class ="android" >
+              <img src="progLang/javascript.png" class ="smaller"  data-toggle="tooltip" title="JavaScript">
             </div>
           </div>
         </div>
@@ -381,8 +381,8 @@
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-2">
-              <img src="progLang/python.png" class ="python">
-              <img src="progLang/angular.png" class ="small">
+                <img src="progLang/python.png" class ="python">
+              <img src="progLang/angular.png" class ="small"  data-toggle="tooltip" title="Angular 2.0">
             </div>
           </div>
         </div>
@@ -633,6 +633,7 @@
       new WOW().init();
       var scrolled = false;
       $(window).scroll(function() {
+        $('[data-toggle="tooltip"]').tooltip();
             if(($(window).scrollTop() >= 80 && $(window).scrollTop() < 450)  && scrolled == false){
                  $('html,body').animate({scrollTop : $('#anchorAbout').offset().top}, 500, function(){
                    scrolled = true;
