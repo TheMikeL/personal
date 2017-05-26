@@ -648,6 +648,16 @@
         $('#M').click(function(){
           $('#humina').show();
         })
+
+      });
+
+      //ScrollTop for header transparent
+      $(window).scroll(function () {
+        if (window.scrollTop() > 120) {
+          //transparent header
+        } else {
+           //regular header
+        }
       });
 
       // Add slideUp animation to Bootstrap dropdown when collapsing.
