@@ -3510,10 +3510,12 @@ tbody.collapse.in {
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
+
 .dropup,
 .dropdown {
   position: relative;
 }
+
 .dropdown-toggle:focus {
   outline: 0;
 }
@@ -3543,6 +3545,7 @@ tbody.collapse.in {
   right: 0;
   left: auto;
 }
+
 .dropdown-menu .divider {
   height: 1px;
   margin: 9px 0;
@@ -3976,6 +3979,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 0;
   list-style: none;
 }
+.nav2{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  background-color: transparent;
+  color: #333;
+}
 .nav > li {
   position: relative;
   display: block;
@@ -4322,7 +4332,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+
 }
 .navbar-nav > li > a {
   padding-top: 10px;
