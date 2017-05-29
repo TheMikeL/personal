@@ -16,13 +16,15 @@ ul {
     font-size: 12pt;
     border-bottom:solid 1pt #f2f2f2;
 }
-li {
-    float: left;
-}
-li a {
-    display: inline-block;
-    color: black;
-    text-align: center;
+@media (min-width: 768px) {
+  li {
+      float: left;
+  }
+  li a {
+      display: inline-block;
+      color: black;
+      text-align: center;
+  }
 }
 
 .homeBackground{
@@ -376,20 +378,21 @@ li a {
   text-align: center;
   font-size: 16pt;
 }
+@media (min-width: 768px) {
+  .dropdownBar{
+    width: 158px ;
+    text-align: left;
+  }
 
-.dropdownBar{
-  width: 158px ;
-  text-align: left;
-}
+  .dropdownLight{
+    color: white;
+    margin-top: 10px;
+  }
 
-.dropdownLight{
-  color: white;
-  margin-top: 10px;
-}
-
-.dropdownDark{
-  color: #333;
-  margin-top: 10px;
+  .dropdownDark{
+    color: #333;
+    margin-top: 10px;
+  }
 }
 
 .nameHeader{
@@ -426,43 +429,48 @@ li a {
   padding: none;
 }
 
-#headerTitle.Light{
-  position: absolute;
-  width: 75%;
-  color: white;
-  font-size: 18pt;
-  margin-top: 15px;
+@media (min-width: 1000px) {
+  .headerTitle{
+    position: absolute;
+    width: 76%;
+    color: white;
+    font-size: 18pt;
+    margin-top: 15px;
+  }
+
+  .headerTitleDark{
+    position: absolute;
+    width: 75%;
+    color: #333;
+    font-size: 18pt;
+    margin-top: 15px;
+  }
+
+
+  .mainTitleCenter{
+    text-align: center;
+  }
 }
 
-#headerTitle.Dark{
-  position: absolute;
-  width: 75%;
-  color: #333;
-  font-size: 18pt;
-  margin-top: 15px;
-}
-
-.mainTitleCenter{
-  text-align: center;
-}
-
-.logoSize{
+.logoSize{ /* Pic Font: Pacifico*/
   height: 30pt;
   padding: 0px;
 }
 
 .logoFormat{ /* For format, Reference bootstrap.css .navbar > li > a */
+  display: inline-block;
   margin-top: 5px;
   height: 50px;
-  width: 170px;
-  background-size: cover;
+  width: 160px;
+  background-size: contain;
   background-image: url("other/headingLight.png");
 }
 
 .logoFormatDark{ /* For format, Reference bootstrap.css .navbar > li > a */
+  display: inline-block;
   margin-top: 5px;
   height: 50px;
-  width: 170px;
+  width: 160px;
   background-size: cover;
   background-image: url("other/headingDark.png");
 }
