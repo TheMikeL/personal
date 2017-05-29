@@ -58,11 +58,6 @@
       <a class="anchor" id="anchorAbout"></a>
       <div class=" row aboutOutline noMargin">
         <div class = "col-md-7">
-          <div class="row AboutFormat">
-            <div class = "AboutHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
-            	About me
-            </div>
-          </div>
           <div class = "row">
             <div class ="col-md-6">
               <div class="AboutText wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
@@ -83,7 +78,7 @@
         <div class="col-md-1"></div>
         <div class ="col-md-4">
           <div class="personalPic wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.6s"></div>
-          <!--I can't believe you cheated for the easter egg-->
+          <!--I can't believe you're reading this-->
           <!--If you are on this list. I want to thank you for influencing my life in some sort of way.
               It has shaped me to who I am this day.-->
           <p style="color:inherit" id="humina">Thank you: Ju.K | Jo.C | Ste.M | Joo.L | Jac.L | And.K
@@ -100,11 +95,6 @@
       <!-- Project Section-->
       <a class="anchor" id="anchorProject"></a>
       <div class ="row projOutline noMargin">
-        <div class ="row">
-        	<div class="whiteHeader">
-        		Projects
-        	</div>
-        </div>
         <div class = "row">
           <div class ="col-md-3">
             <div class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> Queen's Tour Guide App</div>
@@ -134,9 +124,6 @@
       <a class="anchor" id="anchorCareer"></a>
       <div class="row careerOutline noMargin">
         <div class="row AboutFormat">
-          <div class = "blackHeader">
-            Career
-          </div>
           <br>
           <div class="timeline timeline-line-solid wow fadeInDownBig" data-wow-offset="-300" data-wow-duration="1s">
             <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
@@ -322,11 +309,6 @@
       <!-- Programming Section-->
       <a class="anchor" id="anchorProgram"></a>
       <div class="row progOutline noMargin">
-        <div class="row expFormat">
-          <div class = "whiteHeader">
-            Programming Experience
-          </div>
-        </div>
         <div class="row wow fadeInUp" data-wow-offset="50" data-wow-duration="1s">
           <div class="expCenter">
             <div class="col-md-2">
@@ -646,11 +628,11 @@
       });
 
       //Changing Header title depending on page lcoation
-      var aboutAnchor = $("#anchorAbout").offset().top - 50;
-      var projectAnchor = $("#anchorProject").offset().top - 170;
-      var careerAnchor = $("#anchorCareer").offset().top - 170;
-      var programAnchor = $("#anchorProgram").offset().top - 170;
-      document.getElementById("mainTitle").innerHTML = "Hello!";
+      var aboutAnchor = $("#anchorAbout").offset().top - 100;
+      var projectAnchor = $("#anchorProject").offset().top - 250;
+      var careerAnchor = $("#anchorCareer").offset().top - 250;
+      var programAnchor = $("#anchorProgram").offset().top - 250;
+      document.getElementById("mainTitle").innerHTML = "";
       var $w = $(window).scroll(function(){
           if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
             document.getElementById("mainTitle").innerHTML = "About Me";
@@ -661,7 +643,7 @@
           } else if ( $w.scrollTop() > programAnchor ) {
             document.getElementById("mainTitle").innerHTML = "Programming Experience";
           } else {
-            document.getElementById("mainTitle").innerHTML = "Hello!";
+            document.getElementById("mainTitle").innerHTML = "";
           }
       });
 
@@ -696,7 +678,7 @@
           $("#mainTitle").addClass('headerTitleDark');
           $("#logoHeader").addClass('logoFormatDark');
           $("#hamburgerHeader").addClass('dropdownDark');
-        } else if ($(window).scrollTop() < 75){
+        } else if ($(window).scrollTop() < 150){
           $("#overallHeader").removeClass('nav');
 
           $("#overallHeader").addClass('navLight');
