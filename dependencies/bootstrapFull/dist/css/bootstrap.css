@@ -3993,7 +3993,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
 }
 .nav > li > a:hover, /*Header Hover color */
 .nav > li > a:focus {
@@ -4336,7 +4335,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-nav > li > a {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   line-height: 20px;
 }
 @media (max-width: 767px) {
@@ -4371,8 +4372,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 }
 .navbar-form {

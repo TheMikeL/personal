@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- @Author: Michael Lam -->
-
+<!--Fonts: Muli, Poppins, Oxygen, Nunito, Josefin sans, Droid sans, Ubuntu-->
 <html>
 <!-- Header Transparent at top but not transparent lower-->
   <head>
@@ -21,8 +21,11 @@
     <title>Michael Lam</title>
 
      <ul id="ovlHeader" class="nav navbar-nav"> <!-- entire bar-->
-          <li><a class="nameHeader" href="#anchorHome">Michael Lam </a></li>
-          <li><div id="mainTitle" style="color:white;"></div></li>
+          <!-- Pic Font: Pacifico-->
+          <li><a href="#anchorHome" class="logoFormat"><img src="other/headingLight.png" class="logoSize"/></a></li>
+          <div class = "mainTitleCenter">
+            <li><div id="mainTitle" class="headerTitle"></div></li>
+          </div>
           <li class="dropdown pull-right">
             <a id="secondHeader" href="#" class="dropdownWhite" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                <span class="glyphicon glyphicon-menu-hamburger"></a> <!-- Actual button-->
@@ -635,28 +638,49 @@
     <script>
       new WOW().init();
 
-      $('a[href*="#anchor"]').click(function(){
+      $('[href*="#anchor"]').click(function(){
         $('html, body').animate({
           scrollTop: $( $(this).attr('href') ).offset().top
         }, 1000); //Integer value = scroll speed (high is slow)
         return false;
       });
 
+      //Changing Header title depending on page lcoation
+      var aboutAnchor = $("#anchorAbout").offset().top - 50;
+      var projectAnchor = $("#anchorProject").offset().top - 170;
+      var careerAnchor = $("#anchorCareer").offset().top - 170;
+      var programAnchor = $("#anchorProgram").offset().top - 170;
+        var $w = $(window).scroll(function(){
+            if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
+              document.getElementById("mainTitle").innerHTML = "About Me";
+            } else if ( $w.scrollTop() > projectAnchor && $w.scrollTop() < careerAnchor ) {
+              document.getElementById("mainTitle").innerHTML = "Projects";
+            } else if ( $w.scrollTop() > careerAnchor && $w.scrollTop() < programAnchor ) {
+              document.getElementById("mainTitle").innerHTML = "Career";
+            } else if ( $w.scrollTop() > programAnchor ) {
+              document.getElementById("mainTitle").innerHTML = "Programming Experience";
+            } else {
+              document.getElementById("mainTitle").innerHTML = "Hello!";
+            }
+        });
+
+      // Add slideDown animation to Bootstrap dropdown when collapsing.
       $('.dropdown').on('show.bs.dropdown', function() {
         $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-      });
-
-      $('#humina').hide();
-      $(document).ready(function(){
-        $('#M').click(function(){
-          $('#humina').show();
-        })
-
       });
 
       // Add slideUp animation to Bootstrap dropdown when collapsing.
       $('.dropdown').on('hide.bs.dropdown', function() {
         $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+      });
+
+      $('#humina').hide();
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $('#M').click(function(){
+          $('#humina').show();
+        })
+
       });
 
       //ScrollTop for header transparent
