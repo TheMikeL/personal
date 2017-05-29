@@ -20,14 +20,14 @@
     <link rel="shortcut icon" href="other/TabPic.png"/>
     <title>Michael Lam</title>
 
-     <ul id="ovlHeader" class="nav navbar-nav"> <!-- entire bar-->
+     <ul id="overallHeader" class="navLight navbar-nav"> <!-- entire bar-->
           <!-- Pic Font: Pacifico-->
-          <li><a href="#anchorHome" class="logoFormat"><img src="other/headingLight.png" class="logoSize"/></a></li>
+          <li><a id="logoHeader" href="#anchorHome" class="logoFormatDark"></a></li>
           <div class = "mainTitleCenter">
-            <li><div id="mainTitle" class="headerTitle"></div></li>
+            <li><div id="mainTitle" class="headerTitleDark"></div></li>
           </div>
           <li class="dropdown pull-right">
-            <a id="secondHeader" href="#" class="dropdownWhite" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <a id="hamburgerHeader" href="#" class="dropdownDark" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                <span class="glyphicon glyphicon-menu-hamburger"></a> <!-- Actual button-->
             <ul class="dropdown-menu">
               <li><a class="dropdownBar" href="#anchorAbout">About</a></li>
@@ -650,19 +650,20 @@
       var projectAnchor = $("#anchorProject").offset().top - 170;
       var careerAnchor = $("#anchorCareer").offset().top - 170;
       var programAnchor = $("#anchorProgram").offset().top - 170;
-        var $w = $(window).scroll(function(){
-            if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
-              document.getElementById("mainTitle").innerHTML = "About Me";
-            } else if ( $w.scrollTop() > projectAnchor && $w.scrollTop() < careerAnchor ) {
-              document.getElementById("mainTitle").innerHTML = "Projects";
-            } else if ( $w.scrollTop() > careerAnchor && $w.scrollTop() < programAnchor ) {
-              document.getElementById("mainTitle").innerHTML = "Career";
-            } else if ( $w.scrollTop() > programAnchor ) {
-              document.getElementById("mainTitle").innerHTML = "Programming Experience";
-            } else {
-              document.getElementById("mainTitle").innerHTML = "Hello!";
-            }
-        });
+      document.getElementById("mainTitle").innerHTML = "Hello!";
+      var $w = $(window).scroll(function(){
+          if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
+            document.getElementById("mainTitle").innerHTML = "About Me";
+          } else if ( $w.scrollTop() > projectAnchor && $w.scrollTop() < careerAnchor ) {
+            document.getElementById("mainTitle").innerHTML = "Projects";
+          } else if ( $w.scrollTop() > careerAnchor && $w.scrollTop() < programAnchor ) {
+            document.getElementById("mainTitle").innerHTML = "Career";
+          } else if ( $w.scrollTop() > programAnchor ) {
+            document.getElementById("mainTitle").innerHTML = "Programming Experience";
+          } else {
+            document.getElementById("mainTitle").innerHTML = "Hello!";
+          }
+      });
 
       // Add slideDown animation to Bootstrap dropdown when collapsing.
       $('.dropdown').on('show.bs.dropdown', function() {
@@ -685,11 +686,29 @@
 
       //ScrollTop for header transparent
       $(window).scroll(function() {
-        if ($(window).scrollTop() < 20) {
-        //transparent header
-        }
-        else {
-          //regular header
+        if ($(window).scrollTop() > 75){
+          $("#mainTitle").removeClass('headerTitleDark');
+          $("#logoHeader").removeClass('logoFormatDark');
+          $("#hamburgerHeader").removeClass('dropdownDark');
+          $("#overallHeader").removeClass('navLight');
+          $("#overallHeader").fade("slow", function() {
+            $(this).addClass('nav');
+          });
+          $("#mainTitle").fadeIn("slow", function() {
+            $(this).addClass('headerTitle');
+          });
+          $("#logoHeader").fadeIn("slow", function() {
+            $(this).addClass('logoFormat');
+          });
+          $("#hamburgerHeader").fadeIn("slow", function() {
+            $(this).addClass('dropdownLight');
+          });
+        } else if ($(window).scrollTop() < 50){
+          $("#overallHeader").addClass('navLight');
+          $("#overallHeader").removeClass('nav');
+          $("#mainTitle").addClass('headerTitleDark');
+          $("#logoHeader").addClass('logoFormatDark');
+          $("#hamburgerHeader").addClass('dropdownDark');
         }
       });
 
