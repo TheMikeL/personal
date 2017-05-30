@@ -13,9 +13,10 @@
 
     <!-- Javascript Dependencies-->
     <script type="text/javascript" src="dependencies/bootstrapFull/js/tests/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="dependencies/jquery-ui.js"></script>
     <script type="text/javascript" src="dependencies/bootstrapFull/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="dependencies/bootstrapFull/js/carousel.js"></script>
-    <script type="text/javascript" src="dependencies/jquery-ui.js"></script>
+
     <script src="dependencies/wow.min.js"></script>
 
     <link rel="shortcut icon" href="other/TabPic.png"/>
@@ -59,6 +60,11 @@
       <a class="anchor" id="anchorAbout"></a>
       <div class=" row aboutOutline noMargin">
         <div class = "col-md-7">
+          <div  class="row AboutFormat">
+            <div id="aboutHeading" class = "AboutHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+            	About me
+            </div>
+          </div>
           <div class = "row">
             <div class ="col-md-6">
               <div class="AboutText wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
@@ -95,6 +101,11 @@
       <!-- Project Section-->
       <a class="anchor" id="anchorProject"></a>
       <div class ="row projOutline noMargin">
+        <div class ="row">
+        	<div id= "projectHeading" class="whiteHeader">
+        		Projects
+        	</div>
+        </div>
         <div class = "row">
           <div class ="col-md-3">
             <div class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> Queen's Tour Guide App</div>
@@ -124,6 +135,9 @@
       <a class="anchor" id="anchorCareer"></a>
       <div class="row careerOutline noMargin">
         <div class="row AboutFormat">
+          <div id="careerHeading" class = "blackHeader">
+            Career
+          </div>
           <br>
           <div class="timeline timeline-line-solid wow fadeInDownBig" data-wow-offset="-300" data-wow-duration="1s">
             <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
@@ -316,6 +330,11 @@
       <!-- Programming Section-->
       <a class="anchor" id="anchorProgram"></a>
       <div class="row progOutline noMargin">
+        <div class="row expFormat">
+          <div id="progHeading" class = "whiteHeader">
+            Programming Experience
+          </div>
+        </div>
         <div class="row wow fadeInUp" data-wow-offset="50" data-wow-duration="1s">
           <div class="expCenter">
             <div class="col-md-2">
@@ -614,8 +633,8 @@
       //Changing Header title depending on page lcoation
       var aboutAnchor = $("#anchorAbout").offset().top - 100;
       var projectAnchor = $("#anchorProject").offset().top - 250;
-      var careerAnchor = $("#anchorCareer").offset().top - 250;
-      var programAnchor = $("#anchorProgram").offset().top - 250;
+      var careerAnchor = $("#anchorCareer").offset().top - 300;
+      var programAnchor = $("#anchorProgram").offset().top - 350;
       document.getElementById("mainTitle").innerHTML = "";
       var $w = $(window).scroll(function(){
           if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
@@ -654,6 +673,15 @@
         } else if ($(window).scrollTop() < 150){
           $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
         }
+        
+        //Set initial headings
+        if ($(window).width() > 1024) {
+          $('#aboutHeading').hide();
+          $('#projectHeading').hide();
+          $('#careerHeading').hide();
+          $('#progHeading').hide();
+        }
+
       });
 
       //ScrollTop for header transparent
@@ -682,15 +710,24 @@
           $("#hamburgerHeader").addClass('dropdownDark');*/
         }
       });
+
       $(window).resize(function() {
         if ($(window).width() < 1024) {
           $('.glyphicon-menu-hamburger').hide();
           $('.dropdown').hide();
           $('#mainTitle').hide();
+          $('#aboutHeading').show();
+          $('#projectHeading').show();
+          $('#careerHeading').show();
+          $('#progHeading').show();
         } else {
           $('.glyphicon-menu-hamburger').show();
           $('.dropdown').show();
           $('#mainTitle').show();
+          $('#aboutHeading').hide();
+          $('#projectHeading').hide();
+          $('#careerHeading').hide();
+          $('#progHeading').hide();
           }
       });
 
