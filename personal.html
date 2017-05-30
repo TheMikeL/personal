@@ -63,15 +63,14 @@
             <div class ="col-md-6">
               <div class="AboutText wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
               	My name is Michael Lam and I am currently a 4th year Computer Engineering Student at Queen's University.
-              	I have taken Computer Systems Architecture, Engineering Economics, Introduction to Software Development
-              	Algorithms I, and Networks.
+
               </div>
             </div>
             <div class ="col-md-6">
               <div class="AboutText wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
                  I am currently a Exchange Participant Manager at AIESEC Queen's. I have a strong interest in the business side of
                  companies as well.
-                 In my spare time, I like to powerlift, create applications, play Basketball, and indulge in online games. <br>
+                 In my spare time, I like to powerlift, create applications, play Basketball, and play online games. <br>
               </div>
             </div>
           </div>
@@ -167,9 +166,16 @@
                         <div class="col-md-3"><b>Fourth Year</b></div>
                       </div>
                       <div class="row">
-                        <div class="col-md-3">Physics 1 <br> Calculus 1 <br> Calculus 2</div>
-                        <div class="col-md-3"></div>
-                        <div class="col-md-3"></div>
+                        <div class="col-md-3">-Engineering Practice <br>
+                          -Mechanics <br> -Physics 2<br>
+                          -Chemistry 1 & 2 <br> -Calculus 1 & 2</div>
+                        <div class="col-md-3">-Electric Circuits <br>
+                        -Discrete Math <br> -Digital Systems <br>
+                        -Comp Architecture <br> -Data Structures <br>
+                        -Electromagnetics <br> -Engineering Econ </div>
+                        <div class="col-md-3">-Fund. Soft. Dev. <br>
+                        -Human&Comp  sInteraction<br> -Databases <br> -Algorithms <br>
+                        -Probability <br> -Networks <br> -Microprocessors</div>
                         <div class="col-md-3">Courses: TBD</div>
                       </div>
                     </div>
@@ -469,39 +475,16 @@
            <div class="modal-content">
              <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal">&times;</button>
-               <h4 class="modal-title">RML | Start Up Project</h4>
+               <h4 class="modal-title">RML | Start Up Project | in-Development</h4>
              </div>
              <div class="modal-body">
                <div class="row">
-                 <div class = "col-md-6"><!--Picture Carousel-->
-                   <div id="rmlCarousel" class="carousel slide" data-ride="carousel">
-                     <!-- Indicators -->
-                     <ol class="carousel-indicators">
-                       <li data-target="#rmlCarousel" data-slide-to="0" class="active"></li>
-                       <li data-target="#rmlCarousel" data-slide-to="1"></li>
-                       <li data-target="#rmlCarousel" data-slide-to="2"></li>
-                       <li data-target="#rmlCarousel" data-slide-to="3"></li>
-                     </ol>
-
-                     <!-- Wrapper for slides -->
-                     <div class="carousel-inner">
-
-
-                     </div>
-
-                     <!-- Left and right controls -->
-                     <a class="left carousel-control" href="#rmlCarousel" data-slide= "prev">
-                       <span class="glyphicon glyphicon-chevron-left"></span>
-
-                     </a>
-                     <a class="right carousel-control" href="#rmlCarousel" data-slide="next">
-                       <span class="glyphicon glyphicon-chevron-right"></span>
-                     </a>
-                   </div>
-
-                 </div>
+                 <div class = "col-md-3"></div>
                  <div class = "col-md-6">
-                   <p>Blurb about stuff. I love blurbs and stuff because they are great </p>
+                   <p>The project is currently in the development phase, so no pictures can be shown, and
+                   very little information can be provided.<br><br>
+                    The project is being created by one friend and I. We are learning and using Ruby on Rails,
+                    JQuery, HTML5, CSS3, and Bootstrap. This project is designed with University students in mind.</p>
                  </div>
                </div>
              </div>
@@ -665,6 +648,12 @@
           $('#humina').show();
         })
 
+        //Check if page position when refereshed
+        if ($(window).scrollTop() > 150){
+          $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
+        } else if ($(window).scrollTop() < 150){
+          $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
+        }
       });
 
       //ScrollTop for header transparent
