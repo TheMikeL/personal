@@ -384,6 +384,7 @@ ul {
   .dropdownBar{
     width: 158px ;
     text-align: left;
+    background-color: transparent;
   }
 
   .dropdownLight{

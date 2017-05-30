@@ -15,6 +15,7 @@
     <script type="text/javascript" src="dependencies/bootstrapFull/js/tests/vendor/jquery.min.js"></script>
     <script type="text/javascript" src="dependencies/bootstrapFull/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="dependencies/bootstrapFull/js/carousel.js"></script>
+    <script type="text/javascript" src="dependencies/jquery-ui.js"></script>
     <script src="dependencies/wow.min.js"></script>
 
     <link rel="shortcut icon" href="other/TabPic.png"/>
@@ -669,7 +670,7 @@
       //ScrollTop for header transparent
       $(window).scroll(function() {
         if ($(window).scrollTop() > 150){
-          $("#mainTitle").removeClass('headerTitleDark');
+        /*  $("#mainTitle").removeClass('headerTitleDark');
           $("#logoHeader").removeClass('logoFormatDark');
           $("#hamburgerHeader").removeClass('dropdownDark');
           $("#overallHeader").removeClass('navLight');
@@ -677,14 +678,19 @@
           $("#overallHeader").addClass('nav');
           $("#mainTitle").addClass('headerTitleDark');
           $("#logoHeader").addClass('logoFormatDark');
-          $("#hamburgerHeader").addClass('dropdownDark');
-        } else if ($(window).scrollTop() < 150){
-          $("#overallHeader").removeClass('nav');
+          $("#hamburgerHeader").addClass('dropdownDark');*/
 
+          $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
+
+        } else if ($(window).scrollTop() < 150){
+
+          $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
+          /*
+          $("#overallHeader").removeClass('nav');
           $("#overallHeader").addClass('navLight');
           $("#mainTitle").addClass('headerTitleDark');
           $("#logoHeader").addClass('logoFormatDark');
-          $("#hamburgerHeader").addClass('dropdownDark');
+          $("#hamburgerHeader").addClass('dropdownDark');*/
         }
       });
       $(window).resize(function() {

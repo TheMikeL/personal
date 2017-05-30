@@ -4000,7 +4000,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: block;
   }
   .nav > li > a:hover, /*Header Hover color */
-  .nav > li > a:focus {
+  .nav > li > a:focus,
+  .navLight > li > a:hover, /*Header Hover color */
+  .navLight > li > a:focus {
     text-decoration: none;
     background-color: transparent;
     color: #33ccff;
@@ -4019,7 +4021,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #333;
+  background-color: transparent;
   border-color: #337ab7;
 }
 .nav .nav-divider {
