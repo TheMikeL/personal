@@ -190,7 +190,7 @@ ul {
 	height: 350pt;
 	margin-top: 30pt;
 	opacity: 1;
-	transition: all 0.5s ease-out;
+	transition: all 0.4s ease-out;
 }
 
 .tourGuideProj:hover{
@@ -199,7 +199,7 @@ ul {
   background-size: contain;
   display: inline-block;
 	opacity: 0.8;
-	transition: all 0.5s ease-in;
+	transition: all 0.4s ease-in;
 }
 
 @media (min-width: 768px) {
@@ -245,7 +245,7 @@ ul {
 	margin-top: 30pt;
 	background-color: #111;
 	opacity: 1;
-	transition: all 0.8s ease-out;
+	transition: all 0.4s ease-out;
 }
 
 .rmlProj:hover{
@@ -263,7 +263,7 @@ ul {
 	width: 300px;
 	height: 350pt;
 	opacity: 1;
-	transition: all 0.8s ease-out;
+	transition: all 0.4s ease-out;
 }
 
 .calendarProj:hover{
@@ -271,7 +271,7 @@ ul {
   background-repeat: round;
   background-size: contain;
 	opacity: 0.8;
-	transition: all 0.8s ease-in;
+	transition: all 0.4s ease-in;
 }
 
 .personalProj{
