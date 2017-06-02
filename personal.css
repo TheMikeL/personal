@@ -305,8 +305,6 @@ ul {
 }
 
 .lIBtn{
-	background-image: url('contact/linkedIn.png');
-	background-repeat: no-repeat;
 	background-color: white;
 	width: 40pt;
 	height: 40pt;
@@ -317,8 +315,6 @@ ul {
 }
 
 .gitBtn{
-	background-image: url('contact/Git.png');
-	background-repeat: no-repeat;
 	background-color: white;
 	width: 40pt;
 	height: 40pt;
@@ -329,8 +325,6 @@ ul {
 }
 
 .emailBtn{
-	background-image: url('contact/Email.png');
-	background-repeat: no-repeat;
 	background-color: white;
 	width: 40pt;
 	height: 40pt;
