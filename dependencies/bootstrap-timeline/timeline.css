@@ -631,7 +631,7 @@
   margin-right: 12px;
   position: absolute;
   z-index: 100;
-  border-width: 2px;
+  border-width: 4px;
   border-style: solid;
   border-radius: 100%;
   line-height: 20px;
@@ -721,7 +721,7 @@
 }
 
 .timeline .timeline-item > .timeline-point.timeline-point-vol {
-  color: #80ff80;
+  color: #4dff4d;
   background: #fff;
 }
 

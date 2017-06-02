@@ -55,7 +55,11 @@
         Let's Take a Journey!<br>
         </div>
       </div>
-
+      <a href="#anchorHome">
+        <div id="toTheTop" class="backHome">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+      </a>
       <!-- About Section-->
       <a class="anchor" id="anchorAbout"></a>
       <div class=" row aboutOutline noMargin">
@@ -88,10 +92,10 @@
           <!--If you are on this list. I want to thank you for influencing my life in some sort of way.
               It has shaped me to who I am this day.-->
           <p style="color:inherit" id="humina">Thank you: Ju.K | Jo.C | Ste.M | Joo.L | Jac.L | And.K
-            | Nat.I | Cla.L | Ni.K | Stel.K |<br>
-              Al.Z | Ga.M | El.G | Nan.Y | Joh.E | Dim.K | Sa.P | Mich.T | Jen.N | Mel.U |<br>
-              Al.B | Ev.K | Ma.L | Lo.L | Da.L | Wy.W | Na.W | Al.K | Ju.N | Ra.L | Chr. T |<br>
-              Chr.M | Bl.P | Vi.L | Sh.H |La.V | Ak.P | Co.C | Jo.C | Be.C</p>
+            | Nat.I | Cla.L | Ni.K | Stel.K |
+              Al.Z | Ga.M | El.G | Nan.Y | Joh.E | Dim.K | Sa.P | Mich.T | Jen.N | Mel.U |
+              Al.B | Ev.K | Ma.L | Lo.L | Da.L | Wy.W | Na.W | Al.K | Ju.N | Ra.L | Chr. T |
+              Chr.M | Bl.P | Vi.L | Sh.H |La.V | Ak.P | Co.C | Jo.C | Be.C | Lau.S | Th.M </p>
         </div>
         <!-- <a href="ty.html"> -->
           <div id="M" class="bBold">Hey What's Up</div>
@@ -108,22 +112,31 @@
         </div>
         <div class = "row">
           <div class ="col-md-3 centerAll">
-            <div class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"> Queen's Tour Guide App</div>
+            <div data-toggle="modal" data-target="#tourModal" class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"
+            > Queen's Tour Guide App</div>
             <button type="button" data-toggle="modal" data-target="#tourModal"
             class = "tourGuideProj wow fadeIn" data-wow-duration="1s"></button>
           </div>
           <div class ="col-md-3 centerAll">
-            <div class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s"> QLife | CMPE 320 </div>
+            <div data-toggle="modal" data-target="#calendarModal"
+              class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+              QLife | CMPE 320
+            </div>
             <button type="button" data-toggle="modal" data-target="#calendarModal"
             class = "calendarProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"></button>
           </div>
           <div class ="col-md-3 centerAll">
-            <div class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s"> Personal Website </div>
+            <div data-toggle="modal" data-target="#personalModal"
+              class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s"> Personal Website
+            </div>
             <button type="button" data-toggle="modal" data-target="#personalModal"
             class = "personalProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s"></button>
           </div>
           <div class ="col-md-3 centerAll">
-            <div class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s"> RML </div>
+            <div data-toggle="modal" data-target="#rmlModal"
+              class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
+              RML
+            </div>
             <button type="button" data-toggle="modal" data-target="#rmlModal"
             class = "rmlProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s"></button>
           </div>
@@ -139,6 +152,28 @@
             Career
           </div>
           <br>
+          <div id="Legend" class="legendBox">
+
+            <div class="col-md-4">
+              <div class="legendPoint legendPoint-vol"></div>
+            </div>
+            <div class="col-md-8 legendText">
+              Volunteer Experience
+            </div>
+            <div class="col-md-4">
+              <div class="legendPoint legendPoint-work"></div>
+            </div>
+            <div class="col-md-8 legendText">
+              Work Experience
+            </div>
+            <div class="col-md-4">
+              <div class="legendPoint legendPoint-school"></div>
+            </div>
+            <div class="col-md-8 legendText">
+              School
+            </div>
+          </div>
+
           <div class="timeline timeline-line-solid wow fadeInDownBig" data-wow-offset="-300" data-wow-duration="1s">
             <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
                 <span class="label label-primary">Past</span>
@@ -719,27 +754,12 @@
       //ScrollTop for header transparent
       $(window).scroll(function() {
         if ($(window).scrollTop() > 150){
-        /*  $("#mainTitle").removeClass('headerTitleDark');
-          $("#logoHeader").removeClass('logoFormatDark');
-          $("#hamburgerHeader").removeClass('dropdownDark');
-          $("#overallHeader").removeClass('navLight');
-
-          $("#overallHeader").addClass('nav');
-          $("#mainTitle").addClass('headerTitleDark');
-          $("#logoHeader").addClass('logoFormatDark');
-          $("#hamburgerHeader").addClass('dropdownDark');*/
 
           $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
 
         } else if ($(window).scrollTop() < 150){
 
           $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
-          /*
-          $("#overallHeader").removeClass('nav');
-          $("#overallHeader").addClass('navLight');
-          $("#mainTitle").addClass('headerTitleDark');
-          $("#logoHeader").addClass('logoFormatDark');
-          $("#hamburgerHeader").addClass('dropdownDark');*/
         }
       });
 
@@ -754,6 +774,7 @@
         $('#calCarousel').hide();
         $('#tourCarousel').hide();
         $('#personalCarousel').hide();
+        $('#Legend').hide();
       }
 
       $(window).resize(function() {
@@ -768,6 +789,7 @@
           $('#calCarousel').hide();
           $('#tourCarousel').hide();
           $('#personalCarousel').hide();
+          $('#Legend').hide();
         } else {
           $('.glyphicon-menu-hamburger').show();
           $('.dropdown').show();
@@ -779,6 +801,7 @@
           $('#calCarousel').show();
           $('#tourCarousel').show();
           $('#personalCarousel').show();
+          $('#Legend').show();
           }
       });
 

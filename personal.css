@@ -8,13 +8,11 @@ body{
 ul {
     list-style-type: none;
     padding: 0;
-    background-color: #333;
     position: fixed;
     z-index: 9999;
     top: 0;
     width: 100%;
     font-size: 12pt;
-    border-bottom:solid 1pt #f2f2f2;
 }
 @media (min-width: 768px) {
   li {
@@ -145,7 +143,7 @@ ul {
 }
 
 .personalPic{
-	background-image: url('other/ameirl.png');
+	background-image: url('other/meirl.png');
 	background-repeat: no-repeat;
 	height: 200pt;
 	width: 200pt;
@@ -516,4 +514,72 @@ ul {
   text-align:center;
   margin:auto;
   padding: none;
+}
+
+@media (min-width: 1024px) {
+  .legendBox{
+    text-align: left;
+    position: absolute;
+    width: 240pt;
+    height: 140pt;
+    border-width: 3pt;
+    border-style: dashed;
+    border-color: #4d94ff;
+    left: 69%;
+    padding-left: 25pt;
+    padding-top: 10pt;
+  }
+
+  .legendHeader{
+    position: absolute;
+    left: 25%;
+    font-size: 15pt;
+    color: white;
+    width: 70px;
+    border-bottom-style: solid;
+  }
+  .legendText{
+    left:-20px;
+    padding-top:15pt;
+    font-size: 13pt;
+    color: white;
+  }
+
+  .legendPoint{
+    margin-top:15pt;
+    width: 24px;
+    height: 24px;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 100%;
+  }
+
+  .legendPoint.legendPoint-work {
+    color: #ff8080;
+    background: #fff;
+  }
+
+  .legendPoint.legendPoint-vol {
+    color: #4dff4d;
+    background: #fff;
+  }
+
+  .legendPoint.legendPoint-school {
+    color: #9f80ff;
+    background: #fff;
+  }
+}
+
+.backHome{
+  padding-top: 3px;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  z-index: 1000;
 }
