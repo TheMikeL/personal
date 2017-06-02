@@ -186,7 +186,7 @@ ul {
   background-size:cover;
   display: inline-block;
 	position: relative;
-	width: 100%;
+	width: 300px;
 	height: 350pt;
 	margin-top: 30pt;
 	opacity: 1;
@@ -202,27 +202,48 @@ ul {
 	transition: all 0.5s ease-in;
 }
 
-.projText{
-  position: absolute;
-  top: 40%;
-  width: 60%;
-  padding: 25pt;
-  margin-left: 15%;
-  font-family: "Helvetica";
-  font-size: 13pt;
-  border-radius: 15pt;
-  text-align:center;
-  background-color: rgba(0,0,0,0.9);
-  color: white;
-  z-index: 50;
+@media (min-width: 768px) {
+  .projText{
+    position: absolute;
+    top: 40%;
+    width: 200px;
+    padding: 25pt;
+    margin-left: 15%;
+    font-family: "Helvetica";
+    font-size: 13pt;
+    border-radius: 15pt;
+    text-align:center;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    z-index: 50;
+  }
 }
+
+@media (max-width: 768px) {
+  .projText{
+    position: absolute;
+    top: 40%;
+    width: 200px;
+    padding: 25pt;
+    margin-left: 30%;
+    font-family: "Helvetica";
+    font-size: 13pt;
+    border-radius: 15pt;
+    text-align:center;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    z-index: 50;
+  }
+}
+
+
 
 .rmlProj{
 	position: relative;
-	width: 100%;
+	width: 300px;
 	height: 350pt;
 	margin-top: 30pt;
-	background-color: black;
+	background-color: #111;
 	opacity: 1;
 	transition: all 0.8s ease-out;
 }
@@ -239,7 +260,7 @@ ul {
   display: inline-block;
 	position: relative;
   margin-top: 30pt;
-	width: 100%;
+	width: 300px;
 	height: 350pt;
 	opacity: 1;
 	transition: all 0.8s ease-out;
@@ -260,7 +281,7 @@ ul {
   display: inline-block;
 	position: relative;
   margin-top: 30pt;
-	width: 100%;
+	width: 300px;
 	height: 350pt;
 	opacity: 1;
 	transition: all 0.8s ease;
@@ -430,6 +451,18 @@ ul {
   padding: none;
 }
 
+.calCarouselPic:hover{
+  transition: all .3s ease-in;
+
+}
+
+.calBigPic{
+  width: 800px;
+  height: 500px;
+  margin:none;
+  padding: none;
+}
+
 @media (min-width: 1024px) {
   .headerTitle{
     position: absolute;
@@ -474,4 +507,19 @@ ul {
   width: 160px;
   background-size: cover;
   background-image: url("other/headingDark.png");
+}
+
+.modalCenter{
+  text-align: center;
+  margin-left: -15%;
+}
+
+.zoomInSym{
+  color: black;
+}
+
+.centerAll{
+  text-align:center;
+  margin:auto;
+  padding: none;
 }
