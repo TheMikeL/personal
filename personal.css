@@ -155,7 +155,21 @@ ul {
 	position: relative;
 	font-size: 25pt;
 	text-align: center;
-	width: 300pt;
+	width: 200pt;
+	height: 50pt;
+	padding-top: 10pt;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: medium;
+	border-color: #333;
+	margin: auto;
+}
+
+.programHeader{
+	position: relative;
+	font-size: 22pt;
+	text-align: center;
+	width: 275pt;
 	height: 50pt;
 	padding-top: 10pt;
   border-bottom-style: solid;
@@ -168,9 +182,10 @@ ul {
 	position: relative;
 	font-size: 25pt;
 	text-align: center;
-	width: 300pt;
+	width: 200pt;
 	height: 60pt;
 	padding-top: 10pt;
+  padding-bottom: 5px;
 	color: white;
 	border-bottom-style: solid;
   border-bottom-width: medium;
@@ -391,7 +406,7 @@ ul {
 }
 
 .expText{
-  margin-top:20%;
+  margin-top:10%;
   text-align: left;
 }
 
