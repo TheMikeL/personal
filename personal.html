@@ -106,7 +106,8 @@
       <a class="anchor" id="anchorProject"></a>
       <div class ="row projOutline noMargin">
         <div class ="row">
-        	<div id= "projectHeading" class="whiteHeader">
+          <div class="whiteHeaderLine"></div>
+          <div id= "projectHeading" class="whiteHeader">
         		Projects
         	</div>
         </div>
@@ -269,8 +270,7 @@
             </div>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time5" class="timeline-point timeline-point-vol"
-                data-toggle="tooltip" title="<img src='timeline/queens2.png ' />" data-placement="bottom"></div>
+                <div id="time5" class="timeline-point timeline-point-vol"></div>
                 <div id="event5" class="timeline-event  wow fadeInRightC" data-wow-offset="30"
                 data-wow-duration="1s" data-wow-delay="0.6s">
                     <div class="timeline-heading">
@@ -306,9 +306,7 @@
             </div>
 
             <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
-                <div id="time7" class="timeline-point timeline-point-work"
-                data-toggle="tooltip" title="<img src='timeline/lindt2.png ' />" data-placement="bottom">
-                </div>
+                <div id="time7" class="timeline-point timeline-point-work"></div>
                 <div id="event7" class="timeline-event  wow fadeInRightC" data-wow-offset="30"
                 data-wow-duration="1s" data-wow-delay="0.6s">
                     <div class="timeline-heading">
@@ -340,7 +338,7 @@
                 </div>
             </div>
 
-            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s">
                 <div id="time9" class="timeline-point timeline-point-work">
                 </div>
                 <div id="event9" class="timeline-event wow fadeInRightC" data-wow-offset="30"
@@ -625,13 +623,17 @@
                        <li data-target="#personalCarousel" data-slide-to="0" class="active"></li>
                        <li data-target="#personalCarousel" data-slide-to="1"></li>
                        <li data-target="#personalCarousel" data-slide-to="2"></li>
-                       <li data-target="#personalCarousel" data-slide-to="3"></li>
                      </ol>
 
                      <!-- Wrapper for slides -->
                      <div class="carousel-inner">
+                       <div class="item active">
+                         <img src="projects/personal/personalDesignPage.png" class="carouselPic" data-toggle="modal" data-target="#personal1Modal">
+                       </div>
 
-
+                       <div class="item">
+                         <img src="projects/personal/designPage.png" class="carouselPic" data-toggle="modal" data-target="#personal2Modal">
+                       </div>
                      </div>
 
                      <!-- Left and right controls -->
@@ -653,8 +655,6 @@
            </div>
          </div>
       </div>
-
-    </div>
 
 
     <div class="modal fade modalDown modalCenter" id="calPic1Modal" role="dialog">
@@ -686,6 +686,26 @@
            </div>
          </div>
        </div>
+
+       <div class="modal fade modalDown modalCenter" id="personal1Modal" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                  <img src="projects/personal/personalD2.png"  class="calBigPic" data-toggle="modal" data-target="#personal1Modal">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade modalDown mainTitleCenter" id="personal2Modal" role="dialog">
+           <div class="modal-dialog ">
+             <!-- Modal content-->
+             <div class="modal-content">
+                   <img src="projects/personal/designPage.png"  class="perDesPic" data-toggle="modal" data-target="#personal2Modal">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+             </div>
+           </div>
+         </div>
 
     <script>
       new WOW().init();
