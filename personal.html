@@ -206,7 +206,12 @@
                     <div class="timeline-heading">
                         <h4>Queen's University | Computer Engineering | Expected Graduation: 2018</h4>
                     </div>
-                    <div class="timeline-body">
+                    <div id="mobileSchool" class="timeline-body">
+                        <p>First Year consisted of a general Engineering program which included Physics, Calculus, Chemistry
+                        and Programming. Following first year, I specialized in Computer Engineering (Software).
+                        This allowed me to gain experience with both software and hardware.</p>
+                    </div>
+                    <div id="desktopSchool" class="timeline-body">
                       <div class="row">
                         <div class="col-md-3"><b>First Year</b></div>
                         <div class="col-md-3"><b>Second Year</b></div>
@@ -464,7 +469,7 @@
            <div class="modal-content">
              <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal">&times;</button>
-               <h4 class="modal-title">Queen's University Tour Guide Application</h4>
+               <h4 class="modal-title">Queen's University Tour Guide Application | Jan - Nov 2015</h4>
              </div>
              <div class="modal-body">
                <div class="row">
@@ -545,7 +550,7 @@
            <div class="modal-content">
              <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal">&times;</button>
-               <h4 class="modal-title">QLife | CMPE 320 C++ Project</h4>
+               <h4 class="modal-title">QLife | CMPE 320 C++ Project | Sept - Dec 2016</h4>
              </div>
              <div class="modal-body">
                <div class="row">
@@ -603,7 +608,7 @@
            <div class="modal-content">
              <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal">&times;</button>
-               <h4 class="modal-title">Personal Website</h4>
+               <h4 class="modal-title">Personal Website | May - June 2017</h4>
              </div>
              <div class="modal-body">
                <div class="row">
@@ -776,6 +781,8 @@
           $('#projectHeading').hide();
           $('#careerHeading').hide();
           $('#progHeading').hide();
+          $('#mobileSchool').hide();
+          $('#desktopSchool').show();
         }
       });
 
@@ -809,6 +816,8 @@
         $('#tourCarousel').hide();
         $('#personalCarousel').hide();
         $('#Legend').hide();
+        $('#mobileSchool').show();
+        $('#desktopSchool').hide();
       }
 
       $(window).resize(function() {
@@ -824,6 +833,8 @@
           $('#tourCarousel').hide();
           $('#personalCarousel').hide();
           $('#Legend').hide();
+          $('#mobileSchool').show();
+          $('#desktopSchool').hide();
         } else {
           $('.glyphicon-menu-hamburger').show();
           $('.dropdown').show();
@@ -836,6 +847,8 @@
           $('#tourCarousel').show();
           $('#personalCarousel').show();
           $('#Legend').show();
+          $('#mobileSchool').hide();
+          $('#desktopSchool').show();
           }
       });
 
