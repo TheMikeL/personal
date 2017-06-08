@@ -26,6 +26,8 @@ ul {
 }
 
 .homeBackground{
+  overflow:hidden;
+  background-attachment:fixed;
   background-image: url("other/background.jpg");
   background-repeat: no-repeat;
   background-size:cover;
@@ -39,6 +41,7 @@ ul {
 	top: 35%;
 	margin: auto;
   color: #333;
+  transition: opacity 0.1;
 }
 
 .homeOutline{
@@ -63,6 +66,7 @@ ul {
 	background-color: #333;
   border-bottom-style: solid;
 	border-color: #e6e6e6;
+  z-index: 2;
 }
 
 .aboutOutline{
@@ -75,6 +79,7 @@ ul {
 	background-color: #333;
   border-bottom-style: solid;
 	border-color: #e6e6e6;
+  z-index: 2;
 }
 
 .projOutline{
@@ -88,6 +93,7 @@ ul {
 	background-color: #f2f2f2f2;
 	border-bottom-style: solid;
 	border-color: #333;
+  z-index: 2;
 }
 
 .progOutline{
@@ -97,6 +103,7 @@ ul {
 	height: 100%;
   padding-bottom:30px;
 	background-color: #f2f2f2f2;
+  z-index: 2;
 }
 
 .AboutFormat{
@@ -598,6 +605,7 @@ ul {
 
 .backHome{
   padding-top: 3px;
+  padding-left: 1px;
   text-align: center;
   position: fixed;
   bottom: 10px;

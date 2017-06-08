@@ -46,7 +46,7 @@
     <div class="container-fluid noContainerPad">
       <a class="anchor" id="anchorHome"></a>
       <div class="row homeOutline noMargin homeBackground">
-        <div class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
+        <div id="welcome" class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
         	Welcome. <br>
           <!--Let's Take a Journey through my Career! -->
         </div>
@@ -732,7 +732,7 @@
       var careerAnchor = $("#anchorCareer").offset().top - 300;
       var programAnchor = $("#anchorProgram").offset().top - 350;
       document.getElementById("mainTitle").innerHTML = "";
-      var $w = $(window).scroll(function(){
+      var $w = $(document).scroll(function(){
           if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
             document.getElementById("mainTitle").innerHTML = "About Me";
           } else if ( $w.scrollTop() > projectAnchor && $w.scrollTop() < careerAnchor ) {
@@ -779,11 +779,20 @@
         }
       });
 
-      //ScrollTop for header transparent
+      //ScrollTop for header transparent and first page transition
       $(window).scroll(function() {
-        if ($(window).scrollTop() > 150){
+        var scroll = $(window).scrollTop();
+        $(".WelcomeHeader").css({
+            "transform" : "translate(0px, "+ scroll * 1.2 + "%)"
+        });
+
+        $(".WelcomeHeader").css({
+            "opacity" : 1-(scroll / 600)
+        });
+
+        if ($(document).scrollTop() > 150){
           $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
-        } else if ($(window).scrollTop() < 150){
+        } else if ($(document).scrollTop() < 150){
           $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
         }
       });

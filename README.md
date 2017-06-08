@@ -3,7 +3,7 @@
 Made by Michael Lam. The project was started on May 2nd, 2017.
 This project was made for professional purposes. It was meant
 to be a learning tool to get a deeper understanding of website
-design as well as HTML, CSS, JavaScript and Bootstrap.
+design as well as HTML, CSS, JQuery and Bootstrap.
 
 ## timeline
 A bootstrap timeline library was used and modified to my personal taste. The documentation can be found here:
