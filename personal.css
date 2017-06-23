@@ -12,6 +12,7 @@ ul {
     z-index: 9999;
     top: 0;
     width: 100%;
+    font-family: "Poppins";
     font-size: 12pt;
 }
 @media (min-width: 768px) {
@@ -36,6 +37,7 @@ ul {
 
 .WelcomeHeader{
 	position: relative;
+  font-family: "Poppins";
 	font-size: 32pt;
 	text-align: center;
 	top: 35%;
@@ -123,6 +125,7 @@ ul {
 
 .AboutHeader{
 	position: relative;
+  font-family: "Poppins";
 	font-size: 32pt;
 	text-align: center;
 	top: 50%;
@@ -130,6 +133,8 @@ ul {
 }
 .AboutText{
 	position: relative;
+  font-family: "Muli";
+  font-weight: 300;
 	font-size: 14pt;
 	text-align: left;
 	color: white;
@@ -147,6 +152,7 @@ ul {
 
 .whiteHeader{
 	position: relative;
+  font-family: "Poppins";
 	font-size: 25pt;
 	text-align: center;
 	width: 200pt;
@@ -161,6 +167,7 @@ ul {
 
 .programHeader{
 	position: relative;
+  font-family: "Poppins";
 	font-size: 22pt;
 	text-align: center;
 	width: 275pt;
@@ -174,6 +181,7 @@ ul {
 
 .blackHeader{
 	position: relative;
+  font-family: "Poppins";
 	font-size: 25pt;
 	text-align: center;
 	width: 200pt;
@@ -194,7 +202,8 @@ ul {
     width: 200px;
     padding: 25pt;
     margin-left: 15%;
-    font-family: "Helvetica";
+    font-family: "Muli";
+    font-weight: 300;
     font-size: 13pt;
     border-radius: 15pt;
     text-align:center;
@@ -211,7 +220,8 @@ ul {
     width: 200px;
     padding: 25pt;
     margin-left: 30%;
-    font-family: "Helvetica";
+    font-family: "Muli";
+    font-weight: 300;
     font-size: 13pt;
     border-radius: 15pt;
     text-align:center;
@@ -319,6 +329,7 @@ ul {
   left:-7pt;
   width:100%;
 	color:white;
+  font-family: "Poppins";
 	font-size: 20pt;
   text-align: center;
 }
@@ -406,6 +417,7 @@ ul {
 
 .expCenter{
   text-align: center;
+  font-family: "Poppins";
   font-size: 16pt;
 }
 
@@ -439,7 +451,7 @@ ul {
 }
 
 .timeline-label{
-  font-family: Helvetica;
+  font-family: "Helvetica";
   font-size: 13pt;
 }
 
@@ -484,6 +496,7 @@ ul {
     position: absolute;
     width: 76%;
     color: white;
+    font-family: "Poppins";
     font-size: 18pt;
     margin-top: 15px;
   }
@@ -492,6 +505,7 @@ ul {
     position: absolute;
     width: 76%;
     color: #333;
+    font-family: "Poppins";
     font-size: 18pt;
     margin-top: 15px;
   }
@@ -544,7 +558,7 @@ ul {
   .legendBox{
     text-align: left;
     position: absolute;
-    width: 240pt;
+    width: 270pt;
     height: 140pt;
     border-width: 3pt;
     border-style: dashed;
@@ -554,17 +568,10 @@ ul {
     padding-top: 10pt;
   }
 
-  .legendHeader{
-    position: absolute;
-    left: 25%;
-    font-size: 15pt;
-    color: white;
-    width: 70px;
-    border-bottom-style: solid;
-  }
   .legendText{
     left:-20px;
     padding-top:15pt;
+    font-family: "Muli";
     font-size: 13pt;
     color: white;
   }
