@@ -66,12 +66,9 @@ ul {
 .aboutOutline{
   position: relative;
 	padding-left: 15pt;
-  padding-top: 8%;
-  padding-bottom:12%;
 	width: 100%;
 	height: 100%;
-	background-color:  #a9bdd5;
-  z-index: 2;
+	background-color: #66a3ff;
 }
 
 .projOutline{
@@ -97,7 +94,7 @@ ul {
 }
 
 .AboutFormat{
-	height: 100pt;
+	height: 90pt;
 }
 
 .expFormat{
@@ -135,12 +132,12 @@ ul {
 	position: relative;
 	font-size: 14pt;
 	text-align: left;
-	color:#333;
+	color: white;
 	top: 40%;
 }
 
 .personalPic{
-	background-image: url('other/ameirl.png');
+	background-image: url('other/meirl.png');
 	background-repeat: no-repeat;
 	height: 200pt;
 	width: 200pt;
