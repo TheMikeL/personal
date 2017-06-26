@@ -637,7 +637,7 @@
 @keyframes fadeInLeftC {
   from {
     opacity: 0;
-    transform: translate3d(-20px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
   }
 
   to {
