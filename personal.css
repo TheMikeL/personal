@@ -29,14 +29,13 @@ ul {
 .homeBackground{
   overflow:hidden;
   background-attachment:fixed;
-  background-image: url("home/test72.png");
+  background-image: url("home/test73.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f2f2f2;
 }
 
 .WelcomeHeader{
-  left: 25px;
 	position: relative;
   font-family: "Poppins";
 	font-size: 32pt;
@@ -128,22 +127,54 @@ ul {
 	top: 50%;
 	color: #333;
 }
-.AboutText{
+
+.aboutHeading{
+  text-align: center;
+  font-family: "Muli";
+  font-weight: 600;
+	font-size: 16pt;
+}
+
+.AboutTextBox{
 	position: relative;
   font-family: "Muli";
-  font-weight: 300;
-	font-size: 14pt;
+  font-weight: 400;
+	font-size: 16pt;
 	text-align: left;
-	color: white;
-	top: 25%;
+	color: #333;
+	top: 10%;
+}
+
+.aboutTextLeft{
+  text-align: left;
+}
+
+.aboutTextRight{
+  text-align: right;
+}
+
+.aboutAdjust{
+  padding-top: 20pt;
+}
+.aboutAdjustR{
+  padding-top: 30pt;
+}
+
+.aboutTextAdjust{
+  padding-top: 10pt;
+}
+
+.aboutTextAdjustM{
+  padding-top: 15pt;
 }
 
 .personalPic{
 	background-image: url('other/meirl.png');
 	background-repeat: no-repeat;
-	height: 200pt;
-	width: 200pt;
+	height: 180pt;
+	width: 180pt;
 	margin:auto;
+  margin-top: 10pt;
 }
 
 .whiteHeader{
@@ -367,7 +398,8 @@ ul {
 .bBold{
   background-color:inherit;
   border-style:none;
-  color: #99e6ff;
+  color: white;
+  /*#99e6ff;*/
   text-decoration: none;
   font-size: 8pt;
 }
@@ -629,16 +661,22 @@ ul {
   padding-right: 30pt;
   margin-right: 0;
   width: 100%;
-  height: 250pt;
-  background-color: #4d94ff ;
+  height: 275pt;
+  background-color: #b3d1ff;
+  /*#99c2ff;*/
+  /*#4d94ff ;*/
 }
 
 .midAboutBox{
-  padding-top: 10%;
+  padding-left: 50pt;
+  padding-right: 50pt;
+  padding-top: 5%;
   margin-left: 0;
   width: 100%;
-  height: 250pt;
-  background-color: #ff471a ;
+  height: 275pt;
+  background-color: #777;
+  /*#ffad99;*/
+  /*#ff704d ;*/
 }
 
 .rightAboutBox{
@@ -647,18 +685,22 @@ ul {
   margin-right: 0;
   margin-left: 0;
   width: 100%;
-  height: 250pt;
-  background-color: #8533ff;
+  height: 275pt;
+  background-color: #ffad99;
+  /*#c299ff;*/
+  /*#8533ff;*/
 }
 
-.aboutBar{
-  text-align: center;
-  color: white;
+.rmlText{
   font-family: "Muli";
-  font-weight: 300;
+  font-weight: 400;
 	font-size: 14pt;
-  width: 100%;
-  height: 40pt;
-  padding: 10pt;
-  background-color:#00b33c;
+}
+
+.regText{
+  text-align: center;
+  font-family: "Muli";
+  font-weight: 400;
+	font-size: 13pt;
+  color: white;
 }

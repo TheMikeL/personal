@@ -67,37 +67,93 @@
             	About me
             </div>
           </div>
-          <div  class="row">
-            <div id="aboutHeading" class = "aboutBar wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            	My name is Michael Lam and I am currently a 4th year Computer Engineering student at Queen's University.
-            </div>
-          </div>
           <div class = "row">
             <div class ="noContainerPad col-md-4">
               <div class="leftAboutBox wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                <div class=" AboutText wow fadeInLeftC" data-wow-duration="1s" data-wow-delay="1s">
-                  I am currently a Exchange Participant Manager at AIESEC Queen's. I have a strong interest in the business side of
-                  companies as well.
-                  In my spare time, I like to powerlift, create applications, play Basketball, and play online games. <br>
+                <div class=" AboutTextBox wow fadeInLeftC" data-wow-duration="1s" data-wow-delay="1s">
+                  <div class="row aboutHeading">
+                    Interests
+                  </div>
+                  <div class="aboutTextLeft">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img src="about/idea.png" width="70pt"/>
+                      </div>
+                      <div class="col-md-9 aboutTextAdjustM">
+                         Creating and Innovating
+                      </div>
+                    </div>
+
+                    <div class="row aboutAdjust">
+                      <div class="col-md-3">
+                        <img src="about/business.png" width="60pt"/>
+                      </div>
+                      <div class="col-md-9 aboutTextAdjust">
+                         Business
+                      </div>
+                    </div>
+
+                    <div class="row aboutAdjust">
+                      <div class="col-md-3">
+                        <img src="about/travel.png" width="70pt"/>
+                      </div>
+                      <div class="col-md-9 aboutTextAdjust">
+                         Travelling
+                      </div>
+
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class ="noContainerPad col-md-4">
               <div class="midAboutBox wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-                <div class="personalPic wow fadeInLeftC" data-wow-duration="1s" data-wow-delay="1.05s"></div>
+                <div class="regText wow fadeInLeftC" data-wow-duration="1s" data-wow-delay="1.05s">
+                  My name is Michael Lam.
+                  <div class="personalPic"></div>
+                    I am a 4th year Computer Engineering student at Queen's University.
+                </div>
               </div>
             </div>
         <div class ="noContainerPad col-md-4">
           <div class="rightAboutBox wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="AboutText wow fadeInLeftC" data-wow-duration="1s" data-wow-delay="1s">
-               I am currently a Exchange Participant Manager at AIESEC Queen's. I have a strong interest in the business side of
-               companies as well.
-               In my spare time, I like to powerlift, create applications, play Basketball, and play online games. <br>
+            <div class="AboutTextBox wow fadeInLeftC" data-wow-duration="1s" data-wow-delay="1s">
+              <div class="row aboutHeading">
+                Hobbies
+              </div>
+              <div class="aboutTextRight">
+                <div class="row">
+                  <div class="col-md-9 aboutTextAdjustM">
+                    Cooking and Eating
+                  </div>
+                  <div class="col-md-3">
+                    <img src="about/cooking.png" width="70pt"/>
+                  </div>
+                </div>
+
+                <div class="row aboutAdjustR">
+                  <div class="col-md-9">
+                    Powerlifting
+                  </div>
+                  <div class="col-md-3">
+                    <img src="about/lift.png" width="70pt"/>
+                  </div>
+                </div>
+
+                <div class="row aboutAdjustR">
+                  <div class="col-md-9 aboutTextAdjust">
+                    Basketball
+                  </div>
+                  <div class="col-md-3">
+                    <img src="about/ball.png" width="70pt"/>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!--If you are on this list. I want to thank you for influencing my life in some sort of way.
               My experience with you has shaped me to who I am this day.-->
-          <p style="color:inherit" id="humina">Thank you: Ju.K | Jo.C | Ste.M | Joo.L | Jac.L | And.K
+          <p style="color:white" id="humina">Thank you: Ju.K | Jo.C | Ste.M | Joo.L | Jac.L | And.K
             | Nat.I | Cla.L | Ni.K | Stel.K | Da.L
               Al.Z | Ga.M | El.G | Nan.Y | Joh.E | Dim.K | Sa.P | Mich.T | Jen.N | Mel.U |
               Al.B | Ev.K | Ma.L | Lo.L | Da.L | Wy.W | Na.W | Al.K | Ju.N | Ra.L | Chr. T |
@@ -539,12 +595,12 @@
              </div>
              <div class="modal-body">
                <div class="row">
-                 <div class = "col-md-3"></div>
-                 <div class = "col-md-6">
-                   <p>The project is currently in the development phase, so no pictures can be shown, and
+                 <div class = "col-md-2"></div>
+                 <div class = "col-md-8">
+                   <div class="rmlText">The project is currently in the development phase, so no pictures can be shown, and
                    very little information can be provided.<br><br>
                     The project is being created by one friend and I. We are learning and using Ruby on Rails,
-                    JQuery, HTML5, CSS3, and Bootstrap. This project is designed with University students in mind.</p>
+                    JQuery, HTML5, CSS3, and Bootstrap. This project is designed with University students in mind.</div>
                  </div>
                </div>
              </div>
@@ -741,9 +797,9 @@
 
       //Changing Header title depending on page lcoation
       var aboutAnchor = $("#anchorAbout").offset().top - 100;
-      var projectAnchor = $("#anchorProject").offset().top - 250;
-      var careerAnchor = $("#anchorCareer").offset().top - 300;
-      var programAnchor = $("#anchorProgram").offset().top - 350;
+      var projectAnchor = $("#anchorProject").offset().top - 300;
+      var careerAnchor = $("#anchorCareer").offset().top - 350;
+      var programAnchor = $("#anchorProgram").offset().top - 450;
       document.getElementById("mainTitle").innerHTML = "";
       var $w = $(document).scroll(function(){
           if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
