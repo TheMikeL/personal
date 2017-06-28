@@ -26,6 +26,11 @@ ul {
   }
 }
 
+p{
+  font-family: "Poppins";
+	font-size: 10pt;
+}
+
 .homeBackground{
   overflow:hidden;
   background-attachment:fixed;
@@ -513,9 +518,9 @@ ul {
 }
 
 .perDesPic{
-  width: 500px;
-  height: 550px;
+  width: 650px;
   margin:none;
+  margin-left: -5%;
   padding: none;
 }
 
