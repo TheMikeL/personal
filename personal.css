@@ -1,5 +1,6 @@
 :root{
-  --timelineCol: black;
+  --headingFont: "Poppins";
+  --bodyFont: "Muli";
 }
 
 body{
@@ -12,7 +13,7 @@ ul {
     z-index: 9999;
     top: 0;
     width: 100%;
-    font-family: "Poppins";
+    font-family: var(--headingFont);
     font-size: 12pt;
 }
 @media (min-width: 768px) {
@@ -27,7 +28,7 @@ ul {
 }
 
 p{
-  font-family: "Poppins";
+  font-family: var(--headingFont);
 	font-size: 10pt;
 }
 
@@ -42,7 +43,7 @@ p{
 
 .WelcomeHeader{
 	position: relative;
-  font-family: "Poppins";
+  font-family: var(--headingFont);
 	font-size: 32pt;
 	text-align: center;
 	top: 35%;
@@ -107,7 +108,7 @@ p{
 .footier{
   position: relative;
 	width: 100%;
-	height: 105pt;
+	height: 115pt;
 	color: white;
 	padding-left:15pt;
 	background-color: #333;
@@ -126,23 +127,32 @@ p{
 
 .AboutHeader{
 	position: relative;
-  font-family: "Poppins";
+  font-family: var(--headingFont);
 	font-size: 32pt;
 	text-align: center;
 	top: 50%;
 	color: #333;
 }
 
-.aboutHeading{
-  text-align: center;
-  font-family: "Muli";
+.aboutHeadingL{
+  margin-left: 1pt;
+  text-align: left;
+  font-family: var(--bodyFont);
+  font-weight: 600;
+	font-size: 16pt;
+}
+
+.aboutHeadingR{
+  margin-right: 1pt;
+  text-align: right;
+  font-family: var(--bodyFont);
   font-weight: 600;
 	font-size: 16pt;
 }
 
 .AboutTextBox{
 	position: relative;
-  font-family: "Muli";
+  font-family: var(--bodyFont);
   font-weight: 400;
 	font-size: 16pt;
 	text-align: left;
@@ -174,7 +184,7 @@ p{
 }
 
 .personalPic{
-	background-image: url('other/meirl.png');
+	background-image: url('other/ameirl.png');
 	background-repeat: no-repeat;
 	height: 180pt;
 	width: 180pt;
@@ -184,7 +194,7 @@ p{
 
 .whiteHeader{
 	position: relative;
-  font-family: "Poppins";
+  font-family: var(--headingFont);
 	font-size: 25pt;
 	text-align: center;
 	width: 200pt;
@@ -199,7 +209,7 @@ p{
 
 .programHeader{
 	position: relative;
-  font-family: "Poppins";
+  font-family: var(--headingFont);
 	font-size: 22pt;
 	text-align: center;
 	width: 275pt;
@@ -213,7 +223,7 @@ p{
 
 .blackHeader{
 	position: relative;
-  font-family: "Poppins";
+  font-family: var(--headingFont);
 	font-size: 25pt;
 	text-align: center;
 	width: 200pt;
@@ -234,7 +244,7 @@ p{
     width: 200px;
     padding: 25pt;
     margin-left: 15%;
-    font-family: "Muli";
+    font-family: var(--bodyFont);
     font-weight: 300;
     font-size: 13pt;
     border-radius: 15pt;
@@ -252,7 +262,7 @@ p{
     width: 200px;
     padding: 25pt;
     margin-left: 30%;
-    font-family: "Muli";
+    font-family: var(--bodyFont);
     font-weight: 300;
     font-size: 13pt;
     border-radius: 15pt;
@@ -359,9 +369,10 @@ p{
 .footerText{
 	position: relative;
   left:-7pt;
+  margin-top: 8pt;
   width:100%;
 	color:white;
-  font-family: "Poppins";
+  font-family: var(--headingFont);
 	font-size: 20pt;
   text-align: center;
 }
@@ -415,7 +426,12 @@ p{
   padding: 5pt;
 }
 
+.lastRowIcon{
+  margin-top: 5%;
+}
+
 .android{
+  margin-top: 5%;
   width: 80pt;
 	height: 60pt;
 }
@@ -437,7 +453,11 @@ p{
 @media (min-width: 768px) {
   .expText{
     margin-top: 20%;
-    text-align: left;
+    text-align: center;
+  }
+  .lastExpText{
+    text-align: center;
+    margin-bottom: 10%;
   }
 }
 
@@ -450,7 +470,7 @@ p{
 
 .expCenter{
   text-align: center;
-  font-family: "Poppins";
+  font-family: var(--bodyFont);
   font-size: 16pt;
 }
 
@@ -529,7 +549,7 @@ p{
     position: absolute;
     width: 76%;
     color: white;
-    font-family: "Poppins";
+    font-family: var(--headingFont);
     font-size: 18pt;
     margin-top: 15px;
   }
@@ -538,7 +558,7 @@ p{
     position: absolute;
     width: 76%;
     color: #333;
-    font-family: "Poppins";
+    font-family: var(--headingFont);
     font-size: 18pt;
     margin-top: 15px;
   }
@@ -604,7 +624,7 @@ p{
   .legendText{
     left:-20px;
     padding-top:15pt;
-    font-family: "Muli";
+    font-family: var(--bodyFont);
     font-size: 13pt;
     color: white;
   }
@@ -657,7 +677,7 @@ p{
 
 @media (min-width: 768px) {
   .shaded{
-
+    background-color: #f2f2f2;
   }
 }
 
@@ -697,15 +717,19 @@ p{
 }
 
 .rmlText{
-  font-family: "Muli";
+  font-family: var(--bodyFont);
   font-weight: 400;
 	font-size: 14pt;
 }
 
 .regText{
   text-align: center;
-  font-family: "Muli";
+  font-family: var(--bodyFont);
   font-weight: 400;
 	font-size: 13pt;
   color: white;
+}
+
+.bump{
+  margin-left: 5%;
 }
