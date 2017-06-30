@@ -46,11 +46,13 @@
     <div class="container-fluid noContainerPad">
       <a class="anchor" id="anchorHome"></a>
       <div class="row homeOutline noMargin homeBackground">
-        <div id="welcome" class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
+        <div class = "WelcomeHeaderMobile wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
         	Welcome. <br>
-          <!--Let's Take a Journey through my Career! -->
         </div>
-        <div class = "WelcomeHeader wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" >
+        <div id="WelcomeHeader" class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
+        	Welcome. <br>
+        </div>
+        <div id="WelcomeHeaderL" class = "WelcomeHeader wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" >
         Let's Take a Journey!<br>
         </div>
       </div>
@@ -72,7 +74,11 @@
               <div class="leftAboutBox wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class=" AboutTextBox wow fadeInLeftC" data-wow-duration="1s" data-wow-delay="1s">
                   <div class="row aboutHeadingL">
-                    Interests
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-9">
+                      Interests
+                    </div>
                   </div>
                   <div class="aboutTextLeft">
                     <div class="row">
@@ -119,7 +125,9 @@
           <div class="rightAboutBox wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
             <div class="AboutTextBox wow fadeInLeftC" data-wow-duration="1s" data-wow-delay="1s">
               <div class="row aboutHeadingR">
-                Hobbies
+                <div class="col-md-9">
+                  Hobbies
+                </div>
               </div>
               <div class="aboutTextRight">
                 <div class="row">
@@ -175,33 +183,37 @@
         </div>
         <div class = "row">
           <div class ="col-md-3 centerAll">
-            <div data-toggle="modal" data-target="#tourModal" class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"
-            > Queen's Tour Guide App</div>
             <button type="button" data-toggle="modal" data-target="#tourModal"
-            class = "tourGuideProj wow fadeIn" data-wow-duration="1s"></button>
+            class = "tourGuideProj wow fadeIn" data-wow-duration="1s">
+              <div data-toggle="modal" data-target="#tourModal" class ="projText wow fadeIn"
+              data-wow-duration="1s" data-wow-delay="1s"> Queen's Tour Guide App</div>
+            </button>
           </div>
           <div class ="col-md-3 centerAll">
-            <div data-toggle="modal" data-target="#calendarModal"
-              class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
-              QLife | CMPE 320
-            </div>
             <button type="button" data-toggle="modal" data-target="#calendarModal"
-            class = "calendarProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"></button>
+            class = "calendarProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+              <div data-toggle="modal" data-target="#calendarModal"
+                class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
+                QLife | CMPE 320
+              </div>
+            </button>
           </div>
           <div class ="col-md-3 centerAll">
-            <div data-toggle="modal" data-target="#personalModal"
-              class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s"> Personal Website
-            </div>
             <button type="button" data-toggle="modal" data-target="#personalModal"
-            class = "personalProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s"></button>
+            class = "personalProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div data-toggle="modal" data-target="#personalModal"
+                class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s"> Personal Website
+              </div>
+            </button>
           </div>
           <div class ="col-md-3 centerAll">
-            <div data-toggle="modal" data-target="#rmlModal"
-              class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
-              RML
-            </div>
             <button type="button" data-toggle="modal" data-target="#rmlModal"
-            class = "rmlProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s"></button>
+            class = "rmlProj wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+              <div data-toggle="modal" data-target="#rmlModal"
+                class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
+                RML
+              </div>
+            </button>
           </div>
         </div>
         <br><br>
@@ -428,7 +440,7 @@
       <div class="row progOutline noMargin">
         <div class="row expFormat">
           <div id="progHeading" class = "programHeader">
-            Programming Experience
+            Coding Experience
           </div>
         </div>
         <div class="row wow fadeInUp" data-wow-offset="50" data-wow-duration="1s">
@@ -904,6 +916,13 @@
         $(".WelcomeHeader").css({
             "opacity" : 1-(scroll / 600)
         });
+        $(".WelcomeHeaderMobile").css({
+            "transform" : "translate(0px, "+ scroll * 1.2 + "%)"
+        });
+
+        $(".WelcomeHeaderMobile").css({
+            "opacity" : 1-(scroll / 600)
+        });
 
         if ($(document).scrollTop() > 150){
           $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
@@ -926,6 +945,8 @@
         $('#Legend').hide();
         $('#mobileSchool').show();
         $('#desktopSchool').hide();
+        $('.WelcomeHeader').hide();
+        $('.WelcomeHeaderMobile').show();
       }
 
       $(window).resize(function() {
@@ -943,6 +964,8 @@
           $('#Legend').hide();
           $('#mobileSchool').show();
           $('#desktopSchool').hide();
+          $('.WelcomeHeader').hide();
+          $('.WelcomeHeaderMobile').show();
         } else {
           $('.glyphicon-menu-hamburger').show();
           $('.dropdown').show();
@@ -957,6 +980,8 @@
           $('#Legend').show();
           $('#mobileSchool').hide();
           $('#desktopSchool').show();
+          $('.WelcomeHeader').show();
+          $('.WelcomeHeaderMobile').hide();
           }
       });
       (function() {

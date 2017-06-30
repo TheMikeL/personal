@@ -52,6 +52,17 @@ p{
   transition: opacity 0.1;
 }
 
+.WelcomeHeaderMobile{
+  position: relative;
+  font-family: var(--headingFont);
+	font-size: 32pt;
+	text-align: right;
+	top: 30%;
+	margin: auto;
+  color: #333;
+  transition: opacity 0.1;
+}
+
 .homeOutline{
   position: relative;
 	padding-left: 15pt;
@@ -132,10 +143,10 @@ p{
 	text-align: center;
 	top: 50%;
 	color: #333;
+  background-color: #b3d1ff;
 }
 
 .aboutHeadingL{
-  margin-left: 1pt;
   text-align: left;
   font-family: var(--bodyFont);
   font-weight: 600;
@@ -143,7 +154,6 @@ p{
 }
 
 .aboutHeadingR{
-  margin-right: 1pt;
   text-align: right;
   font-family: var(--bodyFont);
   font-weight: 600;
@@ -199,7 +209,6 @@ p{
 	text-align: center;
 	width: 200pt;
 	height: 50pt;
-	padding-top: 10pt;
   padding-bottom: 5px;
   border-bottom-style: solid;
   border-bottom-width: medium;
@@ -212,7 +221,7 @@ p{
   font-family: var(--headingFont);
 	font-size: 22pt;
 	text-align: center;
-	width: 275pt;
+	width: 225pt;
 	height: 50pt;
 	padding-top: 10pt;
   border-bottom-style: solid;
@@ -240,7 +249,7 @@ p{
 @media (min-width: 768px) {
   .projText{
     position: absolute;
-    top: 40%;
+    top: 35%;
     width: 200px;
     padding: 25pt;
     margin-left: 15%;
@@ -258,10 +267,10 @@ p{
 @media (max-width: 768px) {
   .projText{
     position: absolute;
-    top: 40%;
+    top: 35%;
     width: 200px;
     padding: 25pt;
-    margin-left: 30%;
+    margin-left: 15%;
     font-family: var(--bodyFont);
     font-weight: 300;
     font-size: 13pt;
