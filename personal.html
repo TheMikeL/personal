@@ -2,7 +2,6 @@
 <!-- @Author: Michael Lam -->
 <!--Fonts: Poppins, Oxygen, Nunito, Josefin sans, Droid sans, Ubuntu, Aerokids, Brandon Grotesque-->
 <html>
-<!-- Header Transparent at top but not transparent lower-->
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS Dependecies-->
@@ -20,7 +19,6 @@
 
     <link rel="shortcut icon" href="other/TabPic.png"/>
     <title>Michael Lam</title>
-
      <ul id="overallHeader" class="navLight navbar-nav"> <!-- entire bar-->
           <!-- Pic Font: Pacifico-->
           <li><a id="logoHeader" href="#anchorHome" class="logoFormatDark"></a></li>
@@ -47,13 +45,13 @@
       <a class="anchor" id="anchorHome"></a>
       <div class="row homeOutline noMargin homeBackground">
         <div class = "WelcomeHeaderMobile wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
+        	Welcome.
+        </div>
+        <div class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
         	Welcome. <br>
         </div>
-        <div id="WelcomeHeader" class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
-        	Welcome. <br>
-        </div>
-        <div id="WelcomeHeaderL" class = "WelcomeHeader wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" >
-        Let's Take a Journey!<br>
+        <div class = "WelcomeHeader wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" >
+        Let's Take a Journey!
         </div>
       </div>
       <a href="#anchorHome">
@@ -83,7 +81,7 @@
                   <div class="aboutTextLeft">
                     <div class="row">
                       <div class="col-md-3">
-                        <img src="about/idea.png" width="70pt"/>
+                        <img id = "aboutIcon1" src="about/idea.png" width="70pt"/>
                       </div>
                       <div class="col-md-9 aboutTextAdjustM">
                          Creating and Innovating
@@ -92,7 +90,7 @@
 
                     <div class="row aboutAdjust">
                       <div class="col-md-3">
-                        <img src="about/business.png" width="60pt"/>
+                        <img id = "aboutIcon2" src="about/business.png" width="60pt"/>
                       </div>
                       <div class="col-md-9 aboutTextAdjust">
                          Business
@@ -101,12 +99,11 @@
 
                     <div class="row aboutAdjust">
                       <div class="col-md-3">
-                        <img src="about/travel.png" width="70pt"/>
+                        <img id = "aboutIcon3" src="about/travel.png" width="70pt"/>
                       </div>
                       <div class="col-md-9 aboutTextAdjust">
                          Travelling
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -134,7 +131,7 @@
                   <div class="col-md-9 aboutTextAdjustM">
                     Cooking and Eating
                   </div>
-                  <div class="col-md-3">
+                  <div id = "aboutIcon4" class="col-md-3">
                     <img src="about/cooking.png" width="70pt"/>
                   </div>
                 </div>
@@ -144,7 +141,7 @@
                     Powerlifting
                   </div>
                   <div class="col-md-3">
-                    <img src="about/lift.png" width="70pt"/>
+                    <img id = "aboutIcon5" src="about/lift.png" width="70pt"/>
                   </div>
                 </div>
 
@@ -153,7 +150,7 @@
                     Basketball
                   </div>
                   <div class="col-md-3">
-                    <img src="about/ball.png" width="70pt"/>
+                    <img id = "aboutIcon6" src="about/ball.png" width="70pt"/>
                   </div>
                 </div>
               </div>
@@ -216,19 +213,17 @@
             </button>
           </div>
         </div>
-        <br><br>
       </div>
 
       <!-- Career section-->
       <a class="anchor" id="anchorCareer"></a>
       <div class="row careerOutline noMargin">
-        <div class="row AboutFormat">
+        <div class="row">
           <div id="careerHeading" class = "blackHeader">
             Career
           </div>
-          <br>
+          <!-- Legend for the Timeline -->
           <div id="Legend" class="legendBox">
-
             <div class="col-md-4">
               <div class="legendPoint legendPoint-vol"></div>
             </div>
@@ -249,6 +244,7 @@
             </div>
           </div>
 
+          <!--Timeline event using the bootstrap-timeline library-->
           <div class="timeline timeline-line-solid wow fadeInDownBig" data-wow-offset="-300" data-wow-duration="1s">
             <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
                 <span class="label label-primary">Past</span>
@@ -426,11 +422,9 @@
                     </div>
                 </div>
             </div>
-
             <span class="timeline-label wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" >
                 <span class="label label-primary">Present</span>
             </span>
-
           </div>
         </div>
       </div>
@@ -438,92 +432,172 @@
       <!-- Programming Section-->
       <a class="anchor" id="anchorProgram"></a>
       <div class="row progOutline noMargin">
-        <div class="row expFormat">
-          <div id="progHeading" class = "programHeader">
-            Coding Experience
-          </div>
-        </div>
-        <div class="row wow fadeInUp" data-wow-offset="50" data-wow-duration="1s">
-          <div class="expCenter">
-            <div class="col-md-3"></div>
-            <div class="col-md-2">
-              <img src="progLang/java.png" class ="medium" data-toggle="tooltip" title="Java">
-            </div>
-            <div class="col-md-2">
-              <div class="expText">1 to 2 years</div>
-            </div>
-            <div class="col-md-2">
-              <img src="progLang/C.png" class ="medium" data-toggle="tooltip" title="C Language">
-            </div>
-          </div>
-        </div>
-
-        <div class="row shaded wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="expCenter">
-            <div class="col-md-2"></div>
-            <div class="col-md-3">
-              <img src="progLang/html5.png" class ="medium" data-toggle="tooltip" title="HTML 5">
-              <img src="progLang/css3.png" class ="medium" data-toggle="tooltip" title="CSS 3">
-            </div>
-            <div class="col-md-2">
-              <div class="expText">6 months to 1 year</div>
-            </div>
-            <div class="col-md-3">
-              <img src="progLang/photoshop.png" class ="medium"  data-toggle="tooltip" title="PhotoShop">
-              <img src="progLang/gitExp.png" class ="medium" data-toggle="tooltip" title="Git">
-            </div>
-          </div>
-        </div>
-
-        <div class="row wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="expCenter">
-            <div class="col-md-2"></div>
-            <div class="col-md-3">
-              <img src="progLang/mySQL.png" class ="medium" data-toggle="tooltip" title="MySQL">
-              <img src="progLang/C++.png" class ="small" data-toggle="tooltip" title="C++">
-            </div>
-            <div class="col-md-2">
-              <div class="expText">3 to 6 months</div>
-            </div>
-            <div class="col-md-3">
-              <img src="progLang/rails.png" class ="small" data-toggle="tooltip" title="Ruby on Rails">
-              <img src="progLang/bootstrap.png" class ="medium bump" data-toggle="tooltip" title="Bootstrap">
-            </div>
-          </div>
-        </div>
-
-        <div class="row shaded wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="expCenter">
-            <div class="col-md-3"></div>
-            <div class="col-md-2">
-              <img src="progLang/android.png" class ="android" data-toggle="tooltip" title="Android Dev">
-            </div>
-            <div class="col-md-2">
-              <div class="expText">1 to 3 months</div>
-            </div>
-            <div class="col-md-2">
-              <img src="progLang/javascript.png" class ="medium"  data-toggle="tooltip" title="JavaScript">
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
-          <div class="expCenter">
-            <div class="col-md-3"></div>
-            <!-- <div class="col-md-1"></div> -->
-            <div class="col-md-2">
-              <img src="progLang/python.png" class ="medium lastRowIcon" data-toggle="tooltip" title="Python 3">
-            </div>
-            <div class="col-md-2">
-              <div class="row">
-                <div class="lastExpText">Learning to Use </div>
+        <!--Desktop Version-->
+        <div id = "desktopProg" class="container-fluid">
+          <div class="row wow fadeInUp" data-wow-offset="50" data-wow-duration="1s">
+            <div class="expCenter">
+              <div class="col-md-3"></div>
+              <div class="col-md-2">
+                <img src="progLang/java.png" class ="medium" data-toggle="tooltip" title="Java">
               </div>
-              <div class="row">
+              <div class="col-md-2">
+                <div class="expText">1 to 2 years</div>
+              </div>
+              <div class="col-md-2">
+                <img src="progLang/C.png" class ="medium" data-toggle="tooltip" title="C Language">
+              </div>
+            </div>
+          </div>
+
+          <div class="row shaded wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="expCenter">
+              <div class="col-md-2"></div>
+              <div class="col-md-3">
+                <img src="progLang/html5.png" class ="medium" data-toggle="tooltip" title="HTML 5">
+                <img src="progLang/css3.png" class ="medium" data-toggle="tooltip" title="CSS 3">
+              </div>
+              <div class="col-md-2">
+                <div class="expText">6 months to 1 year</div>
+              </div>
+              <div class="col-md-3">
+                <img src="progLang/photoshop.png" class ="medium"  data-toggle="tooltip" title="PhotoShop">
+                <img src="progLang/gitExp.png" class ="medium" data-toggle="tooltip" title="Git">
+              </div>
+            </div>
+          </div>
+
+          <div class="row wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="expCenter">
+              <div class="col-md-2"></div>
+              <div class="col-md-3">
+                <img src="progLang/mySQL.png" class ="medium" data-toggle="tooltip" title="MySQL">
+                <img src="progLang/C++.png" class ="small" data-toggle="tooltip" title="C++">
+              </div>
+              <div class="col-md-2">
+                <div class="expText">3 to 6 months</div>
+              </div>
+              <div class="col-md-3">
+                <img src="progLang/rails.png" class ="small" data-toggle="tooltip" title="Ruby on Rails">
+                <img src="progLang/bootstrap.png" class ="medium bump" data-toggle="tooltip" title="Bootstrap">
+              </div>
+            </div>
+          </div>
+
+          <div class="row shaded wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="expCenter">
+              <div class="col-md-3"></div>
+              <div class="col-md-2">
+                <img src="progLang/android.png" class ="android" data-toggle="tooltip" title="Android Dev">
+              </div>
+              <div class="col-md-2">
+                <div class="expText">1 to 3 months</div>
+              </div>
+              <div class="col-md-2">
+                <img src="progLang/javascript.png" class ="medium"  data-toggle="tooltip" title="JavaScript">
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="expCenter">
+              <div class="col-md-3"></div>
+              <!-- <div class="col-md-1"></div> -->
+              <div class="col-md-2">
+                <img src="progLang/python.png" class ="medium lastRowIcon" data-toggle="tooltip" title="Python 3">
+              </div>
+              <div class="col-md-2">
+                <div class="row">
+                  <div class="lastExpText">Learning to Use </div>
+                </div>
+                <div class="row">
+                  <img src="progLang/angular.png" class ="small"  data-toggle="tooltip" title="Angular 2.0">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <img src="progLang/CSharp.png" class ="medium lastRowIcon"  data-toggle="tooltip" title="C#">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Mobile Layout Version-->
+        <div id= "mobileProg" class="container-fluid">
+          <div class="row expFormat">
+            <div id="progHeading" class = "programHeader">
+              Coding Experience
+            </div>
+          </div>
+          <div class="row wow fadeInUp" data-wow-offset="50" data-wow-duration="1s">
+            <div class="expCenter">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <div class="expText">1 to 2 years</div>
+              </div>
+              <div class="col-md-2">
+                <img src="progLang/java.png" class ="medium" data-toggle="tooltip" title="Java">
+                <img src="progLang/C.png" class ="medium" data-toggle="tooltip" title="C Language">
+              </div>
+            </div>
+          </div>
+
+          <div class="row shaded wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="expCenter">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <div class="expText">6 months to 1 year</div>
+              </div>
+              <div class="col-md-3">
+                <img src="progLang/html5.png" class ="medium" data-toggle="tooltip" title="HTML 5">
+                <img src="progLang/css3.png" class ="medium" data-toggle="tooltip" title="CSS 3">
+              </div>
+              <div class="col-md-3">
+                <img src="progLang/photoshop.png" class ="medium"  data-toggle="tooltip" title="PhotoShop">
+                <img src="progLang/gitExp.png" class ="medium" data-toggle="tooltip" title="Git">
+              </div>
+            </div>
+          </div>
+
+          <div class="row wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="expCenter">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <div class="expText">3 to 6 months</div>
+              </div>
+              <div class="col-md-3">
+                <img src="progLang/mySQL.png" class ="medium" data-toggle="tooltip" title="MySQL">
+                <img src="progLang/C++.png" class ="small" data-toggle="tooltip" title="C++">
+              </div>
+              <div class="col-md-3">
+                <img src="progLang/rails.png" class ="small" data-toggle="tooltip" title="Ruby on Rails">
+                <img src="progLang/bootstrap.png" class ="medium bump" data-toggle="tooltip" title="Bootstrap">
+              </div>
+            </div>
+          </div>
+
+          <div class="row shaded wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="expCenter">
+              <div class="col-md-2"></div>
+              <div class="col-md-2">
+                <div class="expText">1 to 3 months</div>
+              </div>
+              <div class="col-md-2">
+                <img src="progLang/android.png" class ="android" data-toggle="tooltip" title="Android Dev">
+                <img src="progLang/javascript.png" class ="medium"  data-toggle="tooltip" title="JavaScript">
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" data-wow-delay="0.3s">
+            <div class="expCenter">
+              <div class="col-md-3"></div>
+              <div class="col-md-2">
+                <div class="expText">Learning to Use </div>
+              </div>
+              <div class="col-md-2">
+                <img src="progLang/python.png" class ="medium lastRowIcon" data-toggle="tooltip" title="Python 3">
                 <img src="progLang/angular.png" class ="small"  data-toggle="tooltip" title="Angular 2.0">
+                <img src="progLang/CSharp.png" class ="medium lastRowIcon"  data-toggle="tooltip" title="C#">
               </div>
-            </div>
-            <div class="col-md-2">
-              <img src="progLang/CSharp.png" class ="medium lastRowIcon"  data-toggle="tooltip" title="C#">
             </div>
           </div>
         </div>
@@ -590,7 +664,6 @@
                        <div class="item centerCarousel">
                          <img src="projects/tourGuide/pageFour.png"  class="carouselPic">
                        </div>
-
                      </div>
                      <!-- Left and right controls -->
                      <a class="left carousel-control" href="#tourCarousel" data-slide= "prev">
@@ -822,6 +895,7 @@
          </div>
         </div>
 
+        <!-- Modal for the mail button to reveal email-->
         <div class="modal fade modalDown" id="emailModal" role="dialog">
            <div class="modal-dialog">
              <!-- Modal content-->
@@ -831,6 +905,7 @@
                </div>
                <div class="modal-body">
                  <div class="centerAll">
+                   <!-- Option to open mail application to mail me-->
                    <a href="mailto:mikekmlam@gmail.com" target="_blank">
                      <img src="contact/Email.png"/>
                    </a>
@@ -842,6 +917,7 @@
         </div>
 
     <script>
+      //Initialize the WOW animations
       new WOW().init();
 
       $('[href*="#anchor"]').click(function(){
@@ -894,16 +970,6 @@
         } else if ($(window).scrollTop() < 150){
           $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
         }
-
-        //Set initial headings
-        if ($(window).width() > 1024) {
-          $('#aboutHeading').hide();
-          $('#projectHeading').hide();
-          $('#careerHeading').hide();
-          $('#progHeading').hide();
-          $('#mobileSchool').hide();
-          $('#desktopSchool').show();
-        }
       });
 
       //ScrollTop for header transparent and first page transition
@@ -912,18 +978,15 @@
         $(".WelcomeHeader").css({
             "transform" : "translate(0px, "+ scroll * 1.2 + "%)"
         });
-
         $(".WelcomeHeader").css({
             "opacity" : 1-(scroll / 600)
         });
         $(".WelcomeHeaderMobile").css({
             "transform" : "translate(0px, "+ scroll * 1.2 + "%)"
         });
-
         $(".WelcomeHeaderMobile").css({
             "opacity" : 1-(scroll / 600)
         });
-
         if ($(document).scrollTop() > 150){
           $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
         } else if ($(document).scrollTop() < 150){
@@ -931,59 +994,88 @@
         }
       });
 
-      if ($(window).width() < 1024) {
+      //Set initial headings
+      if ($(window).width() > 1024) {
+        $('#aboutHeading').hide();
+        $('#projectHeading').hide();
+        $('#careerHeading').hide();
+        $('#progHeading').hide();
+        $('#mobileSchool').hide();
+        $('.WelcomeHeaderMobile').hide();
+        $('#mobileProg').hide();
+      } else {
         $('.glyphicon-menu-hamburger').hide();
         $('.dropdown').hide();
         $('#mainTitle').hide();
-        $('#aboutHeading').show();
-        $('#projectHeading').show();
-        $('#careerHeading').show();
-        $('#progHeading').show();
         $('#calCarousel').hide();
         $('#tourCarousel').hide();
         $('#personalCarousel').hide();
         $('#Legend').hide();
-        $('#mobileSchool').show();
         $('#desktopSchool').hide();
         $('.WelcomeHeader').hide();
-        $('.WelcomeHeaderMobile').show();
+        $('#aboutIcon1').hide();
+        $('#aboutIcon2').hide();
+        $('#aboutIcon3').hide();
+        $('#aboutIcon4').hide();
+        $('#aboutIcon5').hide();
+        $('#aboutIcon6').hide();
+        $('#desktopProg').hide();
       }
 
+      //Allow for screen resizing for responsiveness
       $(window).resize(function() {
         if ($(window).width() < 1024) {
           $('.glyphicon-menu-hamburger').hide();
           $('.dropdown').hide();
           $('#mainTitle').hide();
-          $('#aboutHeading').show();
-          $('#projectHeading').show();
-          $('#careerHeading').show();
-          $('#progHeading').show();
           $('#calCarousel').hide();
           $('#tourCarousel').hide();
           $('#personalCarousel').hide();
           $('#Legend').hide();
-          $('#mobileSchool').show();
+          $('#desktopProg').hide();
           $('#desktopSchool').hide();
           $('.WelcomeHeader').hide();
+          $('#aboutIcon1').hide();
+          $('#aboutIcon2').hide();
+          $('#aboutIcon3').hide();
+          $('#aboutIcon4').hide();
+          $('#aboutIcon5').hide();
+          $('#aboutIcon6').hide();
+          $('#mobileSchool').show();
           $('.WelcomeHeaderMobile').show();
+          $('#aboutHeading').show();
+          $('#projectHeading').show();
+          $('#careerHeading').show();
+          $('#progHeading').show();
+          $('#mobileProg').show();
         } else {
-          $('.glyphicon-menu-hamburger').show();
-          $('.dropdown').show();
-          $('#mainTitle').show();
+          $('.WelcomeHeaderMobile').hide();
+          $('#mobileSchool').hide();
           $('#aboutHeading').hide();
           $('#projectHeading').hide();
           $('#careerHeading').hide();
           $('#progHeading').hide();
+          $('#desktopProg').show();
+          $('.dropdown').show();
+          $('#mainTitle').show();
           $('#calCarousel').show();
           $('#tourCarousel').show();
           $('#personalCarousel').show();
           $('#Legend').show();
-          $('#mobileSchool').hide();
           $('#desktopSchool').show();
           $('.WelcomeHeader').show();
-          $('.WelcomeHeaderMobile').hide();
+          $('.glyphicon-menu-hamburger').show();
+          $('#aboutIcon1').show();
+          $('#aboutIcon2').show();
+          $('#aboutIcon3').show();
+          $('#aboutIcon4').show();
+          $('#aboutIcon5').show();
+          $('#aboutIcon6').show();
+          $('#mobileProg').hide();
           }
       });
+
+      //Import Google Fonts to be used
       (function() {
           var link_element = document.createElement("link"),
               s = document.getElementsByTagName("script")[0];

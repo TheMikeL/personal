@@ -44,3 +44,5 @@ R. A black border was added to the hover feature to make it seem more like a but
 
 D. Project backgrounds <br>
 R. The original idea was to have the final project as the background. However, I wanted to show my original hand-drawn designs that were adopted for each project. A hover feature was implemented that reveals the original hand-drawn design of each project.
+
+### Image Sources

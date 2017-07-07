@@ -6,6 +6,7 @@
 body{
     overflow-x: hidden;
 }
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -16,6 +17,7 @@ ul {
     font-family: var(--headingFont);
     font-size: 12pt;
 }
+
 @media (min-width: 768px) {
   li {
       float: left;
@@ -35,7 +37,7 @@ p{
 .homeBackground{
   overflow:hidden;
   background-attachment:fixed;
-  background-image: url("home/test73.png");
+  background-image: url("home/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f2f2f2;
@@ -95,7 +97,7 @@ p{
 	padding-left: 15pt;
 	padding-right: 15pt;
   padding-top: 25pt;
-  padding-bottom: 15pt;
+  padding-bottom: 70pt;
 	width: 100%;
 	height: 100%;
 	background-color: white;
@@ -105,6 +107,7 @@ p{
 .progOutline{
 	padding-left: 15pt;
 	padding-right: 15pt;
+  padding-top: 30px;
 	width: 100%;
 	height: 100%;
   padding-bottom:30px;
@@ -243,7 +246,9 @@ p{
 	border-bottom-style: solid;
   border-bottom-width: medium;
 	border-color: white;
-	margin: auto;
+	margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25pt;
 }
 
 @media (min-width: 768px) {
@@ -424,7 +429,6 @@ p{
   background-color:inherit;
   border-style:none;
   color: white;
-  /*#99e6ff;*/
   text-decoration: none;
   font-size: 8pt;
 }
@@ -439,10 +443,19 @@ p{
   margin-top: 5%;
 }
 
-.android{
-  margin-top: 5%;
-  width: 80pt;
-	height: 60pt;
+@media (min-width: 1024px) {
+  .android{
+    margin-top: 5%;
+    width: 80pt;
+  	height: 60pt;
+  }
+}
+
+@media (max-width: 1024px) {
+  .android{
+    width: 80pt;
+  	height: 60pt;
+  }
 }
 
 .small{
@@ -451,15 +464,7 @@ p{
   padding: 5pt;
 }
 
-.miniwrap{
-  text-align:center;
-}
-.mini{
-  width: 40pt;
-	height: 40pt;
-  padding: 5pt;
-}
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .expText{
     margin-top: 20%;
     text-align: center;
@@ -470,7 +475,7 @@ p{
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .expText{
     margin-top: 5%;
     text-align: left;
@@ -490,19 +495,10 @@ p{
     background-color: transparent;
   }
 
-  .dropdownLight{
-    color: white;
-    margin-top: 10px;
-  }
-
   .dropdownDark{
     color: #333;
     margin-top: 10px;
   }
-}
-
-.nameHeader{
-  color: white;
 }
 
 .anchor {
@@ -513,7 +509,7 @@ p{
 }
 
 .timeline-label{
-  font-family: "Helvetica";
+  font-family: var(--headingFont);
   font-size: 13pt;
 }
 
@@ -554,14 +550,6 @@ p{
 }
 
 @media (min-width: 1024px) {
-  .headerTitle{
-    position: absolute;
-    width: 76%;
-    color: white;
-    font-family: var(--headingFont);
-    font-size: 18pt;
-    margin-top: 15px;
-  }
 
   .headerTitleDark{
     position: absolute;
@@ -572,7 +560,6 @@ p{
     margin-top: 15px;
   }
 
-
   .mainTitleCenter{
     text-align: center;
   }
@@ -581,15 +568,6 @@ p{
 .logoSize{ /* Pic Font: Pacifico*/
   height: 30pt;
   padding: 0px;
-}
-
-.logoFormat{ /* For format, Reference bootstrap.css .navbar > li > a */
-  display: inline-block;
-  margin-top: 5px;
-  height: 50px;
-  width: 160px;
-  background-size: contain;
-  background-image: url("other/headingLight.png");
 }
 
 .logoFormatDark{ /* For format, Reference bootstrap.css .navbar > li > a */
@@ -604,10 +582,6 @@ p{
 .modalCenter{
   text-align: center;
   margin-left: -15%;
-}
-
-.zoomInSym{
-  color: black;
 }
 
 .centerAll{
@@ -628,6 +602,7 @@ p{
     left: 69%;
     padding-left: 25pt;
     padding-top: 10pt;
+    margin-top: 5pt;
   }
 
   .legendText{
@@ -677,14 +652,15 @@ p{
   color: white;
   z-index: 1000;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
   .shaded{
     margin-top: 20px;
     background-color: #f2f2f2;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .shaded{
     background-color: #f2f2f2;
   }
@@ -697,8 +673,6 @@ p{
   width: 100%;
   height: 275pt;
   background-color: #b3d1ff;
-  /*#99c2ff;*/
-  /*#4d94ff ;*/
 }
 
 .midAboutBox{
@@ -709,8 +683,6 @@ p{
   width: 100%;
   height: 275pt;
   background-color: #777;
-  /*#ffad99;*/
-  /*#ff704d ;*/
 }
 
 .rightAboutBox{
@@ -721,8 +693,6 @@ p{
   width: 100%;
   height: 275pt;
   background-color: #ffad99;
-  /*#c299ff;*/
-  /*#8533ff;*/
 }
 
 .rmlText{
