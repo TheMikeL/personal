@@ -46,3 +46,9 @@ D. Project backgrounds <br>
 R. The original idea was to have the final project as the background. However, I wanted to show my original hand-drawn designs that were adopted for each project. A hover feature was implemented that reveals the original hand-drawn design of each project.
 
 ### Image Sources
+Idea Symbol: http://weknownyourdreamz.com/symbol/sl587363.html
+Airplane Symbol: http://weknownyourdreamz.com/symbol/sl28228.html
+Cooking Symbol: Combined -> https://thenounproject.com/term/fork-and-knife/98173/
+  and
+Basketball Symbol: http://weknownyourdreamz.com/symbol/sl498538.html
+All Programming Language Logos belong to their rightful owner.
