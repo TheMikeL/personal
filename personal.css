@@ -51,17 +51,23 @@ p{
 	top: 35%;
 	margin: auto;
   color: #333;
+  -webkit-transition: opacity: 0.1;
+  -moz-transition: opacity: 0.1;
+  -o-transition: opacity: 0.1;
   transition: opacity 0.1;
 }
 
 .WelcomeHeaderMobile{
   position: relative;
   font-family: var(--headingFont);
-	font-size: 32pt;
+	font-size: 24pt;
 	text-align: right;
 	top: 30%;
 	margin: auto;
   color: #333;
+  -webkit-transition: opacity: 0.1;
+  -moz-transition: opacity 0.1;
+  -o-transition: opacity: 0.1;
   transition: opacity 0.1;
 }
 
@@ -197,12 +203,13 @@ p{
 }
 
 .personalPic{
-	background-image: url('other/ameirl.png');
+	background-image: url('other/meirl.png');
 	background-repeat: no-repeat;
 	height: 180pt;
 	width: 180pt;
 	margin:auto;
   margin-top: 10pt;
+  padding-left: 15pt;
 }
 
 .whiteHeader{
@@ -297,7 +304,11 @@ p{
 	height: 350pt;
   border-radius: 20pt;
 	margin-top: 30pt;
+  outline: none;
 	opacity: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
 }
 
@@ -307,8 +318,10 @@ p{
   background-size: contain;
   display: inline-block;
   padding: 3px;
-  border: solid 3px black;
 	opacity: 0.8;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
 	transition: all 0.4s ease-in;
 }
 
@@ -319,17 +332,21 @@ p{
 	margin-top: 30pt;
   border-radius: 20pt;
 	background-color: #111;
+  outline: none;
 	opacity: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
 }
 
 .rmlProj:hover{
-	opacity: 0.8;
-	transition: all 0.8s ease-in;
   padding: 3px;
-  border-style: solid;
-  border-color: black;
-  border-width: 3px;
+  opacity: 0.8;
+  -webkit-transition: all 0.8s ease-in;
+  -moz-transition: all 0.8s ease-in;
+  -o-transition: all 0.8s ease-in;
+	transition: all 0.8s ease-in;
 }
 
 .calendarProj{
@@ -342,7 +359,11 @@ p{
 	width: 300px;
 	height: 350pt;
   border-radius: 20pt;
+  outline: none;
 	opacity: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
 }
 
@@ -351,23 +372,29 @@ p{
   background-repeat: round;
   background-size: contain;
   padding: 3px;
-  border: solid 3px black;
 	opacity: 0.8;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
 	transition: all 0.4s ease-in;
 }
 
 .personalProj{
-  background-image: url("projects/personal/personalD.png");
-  background-repeat: round;
-  background-size:contain;
+  background-image: url("projects/personal/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
 	position: relative;
   margin-top: 30pt;
 	width: 300px;
 	height: 350pt;
   border-radius: 20pt;
+  outline: none;
 	opacity: 1;
-	transition: all 0.4s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+	transition: all 0.6s ease;
 }
 
 .personalProj:hover{
@@ -375,9 +402,11 @@ p{
   background-repeat: round;
   background-size: contain;
   padding: 3px;
-  border: solid 3px black;
 	opacity: 0.8;
-	transition: all 0.4s ease-in;
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+	transition: all 0.6s ease-in;
 }
 
 .footerText{
@@ -399,6 +428,7 @@ p{
 	border-width: thin;
 	border-radius: 3pt;
 	border-color: #333;
+  outline: none;
 }
 
 .gitBtn{
@@ -409,6 +439,7 @@ p{
 	border-width: thin;
 	border-radius: 3pt;
 	border-color: #333;
+  outline: none;
 }
 
 .emailBtn{
@@ -419,6 +450,7 @@ p{
 	border-width: thin;
 	border-radius: 3pt;
 	border-color: #333;
+  outline: none;
 }
 
 .wrapper{
@@ -513,8 +545,16 @@ p{
   font-size: 13pt;
 }
 
-.modalDown{
-  margin-top: 5%;
+@media (min-width: 768px) {
+  .modalDown{
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modalDown{
+    margin-top: 25%;
+  }
 }
 
 .carouselPic{
@@ -532,7 +572,10 @@ p{
 }
 
 .calCarouselPic:hover{
-  transition: all .3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .calBigPic{
@@ -638,20 +681,21 @@ p{
   }
 }
 
-.backHome{
-  padding-top: 3px;
-  padding-left: 1px;
-  text-align: center;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background-color: black;
-  color: white;
-  z-index: 1000;
-}
+  .backHome{
+    padding-top: 3px;
+    padding-left: 1px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+    z-index: 1000;
+  }
+
 
 @media (max-width: 1024px) {
   .shaded{
