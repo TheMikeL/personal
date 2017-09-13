@@ -432,6 +432,7 @@ p{
 }
 
 .gitBtn{
+  padding-left: -10px;
 	background-color: white;
 	width: 40pt;
 	height: 40pt;
