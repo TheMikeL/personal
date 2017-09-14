@@ -609,6 +609,17 @@ p{
   }
 }
 
+@media (min-width: 1200px){
+  .headerTitleDark{
+    position: absolute;
+    width: 83%;
+    color: #333;
+    font-family: var(--headingFont);
+    font-size: 18pt;
+    margin-top: 15px;
+  }
+}
+
 .logoSize{ /* Pic Font: Pacifico*/
   height: 30pt;
   padding: 0px;
@@ -680,6 +691,7 @@ p{
     color: #9f80ff;
     background: #fff;
   }
+
 }
 
   .backHome{
