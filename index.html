@@ -1119,7 +1119,7 @@
       var aboutAnchor = $("#anchorAbout").offset().top - 100;
       var projectAnchor = $("#anchorProject").offset().top - 300;
       var careerAnchor = $("#anchorCareer").offset().top - 350;
-      var programAnchor = $("#anchorProgram").offset().top - 450;
+      var programAnchor = $("#anchorCareer").offset().top + 1050;
       document.getElementById("mainTitle").innerHTML = "";
       var $w = $(document).scroll(function(){
           if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
