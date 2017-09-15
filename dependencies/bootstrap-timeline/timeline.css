@@ -728,19 +728,9 @@
   background: #fff;
 }
 
-.timeline .timeline-item > .timeline-point.timeline-point-work:hover {
-  color: #b30000;
-  background: white;
-}
-
 .timeline .timeline-item > .timeline-point.timeline-point-vol {
   color: #4dff4d;
   background: #fff;
-}
-
-.timeline .timeline-item > .timeline-point.timeline-point-vol:hover {
-  color: #008000;
-  background: white;
 }
 
 .timeline .timeline-item > .timeline-point.timeline-point-school {
@@ -748,10 +738,6 @@
   background: #fff;
 }
 
-.timeline .timeline-item > .timeline-point.timeline-point-school:hover {
-  color: #531aff;
-  background: white;
-}
 .timeline .timeline-label .label-info {
   background-color: #3e93cf;
 }
