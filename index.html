@@ -23,24 +23,35 @@
 
     <link rel="shortcut icon" href="other/TabPic.png"/>
     <title>Michael Lam</title>
-     <ul id="overallHeader" class="navLight navbar-nav"> <!-- entire bar-->
-          <!-- Pic Font: Pacifico-->
-          <li><a id="logoHeader" href="#anchorHome" class="logoFormatDark"></a></li>
+    <!-- entire bar--><!-- Pic Font: Pacifico-->
+     <nav id="overallHeader" class="navbar navbar-fixed-top">
+       <div class="container-fluid">
+         <div class="navbar-header">
+          <div class="navbar-left">
+            <a id="logoHeader" href="#anchorHome" class="logoFormatDark"></a>
+            <button class="navbar-toggle mobileMenu" data-toggle="collapse" data-target="#navBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          </div>
+
           <div class = "mainTitleCenter">
             <li><div id="mainTitle" class="headerTitleDark"></div></li>
           </div>
-          <li class="dropdown pull-right">
-            <a id="hamburgerHeader" href="#" class="dropdownDark" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-               <span class="glyphicon glyphicon-menu-hamburger"></a> <!-- Actual button-->
-            <ul class="dropdown-menu">
-              <li><a class="dropdownBar" href="#anchorAbout">About</a></li>
-              <li><a class="dropdownBar" href="#anchorProject">Projects</a></li>
-              <li><a class="dropdownBar" href="#anchorCareer">Career</a></li>
-              <li><a class="dropdownBar" href="#anchorProgram">Programming</a></li>
-              <li><a class="dropdownBar" href="#anchorContact">Contact</a></li>
-            </ul>
-          </li>
-      </ul>
+        </div>
+          <div class="collapse navbar-collapse" id="navBar">
+            <div class="nav navbar-nav navbar-right">
+                 <li> <a class="navBarLinks" href="#anchorAbout">About</a> </li>
+                 <li> <a class="navBarLinks" href="#anchorProject">Projects</a> </li>
+                 <li> <a class="navBarLinks" href="#anchorCareer">Career</a> </li>
+                 <li> <a class="navBarLinks" href="#anchorProgram">Programming</a> </li>
+                 <li> <a class="navBarLinks" href="#anchorContact">Contact</a> </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
 
   </head>
   <body>
@@ -66,12 +77,10 @@
       <!-- About Section-->
       <a class="anchor" id="anchorAbout"></a>
       <div class=" row noMargin">
-          <div  class="row">
-            <div id="aboutHeading" class = "AboutHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class = "row">
+            <div id="aboutHeading" class = "AboutHeader wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
             	About me
             </div>
-          </div>
-          <div class = "row">
             <div class ="noContainerPad col-md-4">
               <div class="leftAboutBox wow fadeIn" data-wow-offset="100" data-wow-duration="1s" data-wow-delay="0.4s">
                 <div class=" AboutTextBox wow fadeInLeftC" data-wow-offset="100" data-wow-duration="1s" data-wow-delay="1s">
@@ -212,7 +221,7 @@
             class = "rmlProj wow fadeIn" data-wow-offset="100"  data-wow-duration="1s" data-wow-delay="0.8s">
               <div data-toggle="modal" data-target="#rmlModal"
                 class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
-                RML
+                Unnamed Project
               </div>
             </button>
           </div>
@@ -1086,7 +1095,7 @@
                  <div class="centerAll">
                    <!-- Option to open mail application to mail me-->
                    <a href="mailto:mikekmlam@gmail.com" target="_blank">
-                     <img src="contact/Email.png"/>
+                     <img class="mailToButton" src="contact/Email.png"/>
                    </a>
                    <h2> mikekmlam@gmail.com </h2>
                  </div>
@@ -1146,9 +1155,9 @@
 
         //Check if page position when refereshed
         if ($(window).scrollTop() > 150){
-          $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
-        } else if ($(window).scrollTop() < 150){
           $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
+        } else if ($(window).scrollTop() < 150){
+          $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
         }
       });
 
@@ -1168,9 +1177,9 @@
             "opacity" : 1-(scroll / 600)
         });
         if ($(document).scrollTop() > 150){
-          $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
-        } else if ($(document).scrollTop() < 150){
           $("#overallHeader").switchClass('nav','navLight', 300, 'linear');
+        } else if ($(document).scrollTop() < 150){
+          $("#overallHeader").switchClass('navLight','nav', 300, 'linear');
         }
       });
 
