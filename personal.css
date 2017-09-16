@@ -524,7 +524,11 @@ p{
   }
 }
 
-
+@media (max-width: 768px) {
+  .mobileLastRow{
+    margin-top: 5%;
+  }
+}
 .lastRowIcon{
   margin-top: 5%;
 }
