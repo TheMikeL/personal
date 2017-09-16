@@ -515,6 +515,16 @@ p{
   padding: 5pt;
 }
 
+@media (min-width: 1500px) {
+  .medium-increase-left{
+    margin-left: 9.5%;
+  }
+  .medium-increase-right{
+    margin-right: 10%;
+  }
+}
+
+
 .lastRowIcon{
   margin-top: 5%;
 }
@@ -843,8 +853,20 @@ p{
   color: white;
 }
 
-.bump{
-  margin-left: 5%;
+.col-md-3 > .small.bump{
+  margin-left: 2%;
+}
+
+.col-md-3 > .medium.bump{
+  margin-left: 1.5%;
+}
+
+.col-md-3 > .small.mobileBump{
+  margin-left: 2%;
+}
+
+.col-md-3 > .medium.mobileBump{
+  margin-left: 1%;
 }
 
 .mailToButton{
