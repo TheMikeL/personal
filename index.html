@@ -74,10 +74,27 @@
             <span class="glyphicon glyphicon-chevron-up"></span>
         </div>
       </a>
+      <div class="dropup">
+        <button class="chooseColourFirst dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  </button>
+        <div class="dropdown-menu newDropdown">
+          <div class="row">
+            <button id="changeColourGrey" class="chooseColour GreyChoice"></button>
+          </div>
+          <div class="row">
+            <button id="changeColourGreen" class="chooseColour GreenChoice"></button>
+          </div>
+          <div class="row">
+            <button id="changeColourBlue" class="chooseColour BlueChoice"></button>
+          </div>
+          <div class="row">
+            <button id="changeColourRed" class="chooseColour RedChoice"></button>
+          </div>
+        </div>
+      </div>
       <!-- About Section-->
       <a class="anchor" id="anchorAbout"></a>
       <div class=" row noMargin">
-          <div class = "row">
+          <div class = "row fullcolorBackground">
             <div id="aboutHeading" class = "AboutHeader wow fadeIn" data-wow-duration="1s" data-wow-delay="0.4s">
             	About me
             </div>
@@ -103,14 +120,14 @@
 
                     <div class="row aboutAdjust">
                       <div class="col-sm-3">
-                        <img id = "aboutIcon2" src="about/business.png" width="50pt"/>
+                        <img id = "aboutIcon2" src="about/business.png" width="70pt"/>
                       </div>
-                      <div class="col-sm-9 aboutTextAdjust">
-                         Business
+                      <div class="col-sm-9 aboutTextAdjustM">
+                         Business and Technology
                       </div>
                     </div>
 
-                    <div class="row aboutAdjust">
+                    <div class="row aboutAdjustM">
                       <div class="col-sm-3">
                         <img id = "aboutIcon3" src="about/travel.png" width="60pt"/>
                       </div>
@@ -426,7 +443,9 @@
                         <h4> Government of Ontario | IT Systems Assistant - Web Development Assistant | May 2017 - Aug 2017</h4>
                     </div>
                     <div class="timeline-body">
-                        <p>Working on web projects using Angular 2.0, C#, .Net, HTML5, CSS3, and JavaScript.</p>
+                        <p>Worked on web projects using Angular 2.0, C#, .Net, HTML5, CSS3, Typescript, SharePoint and JavaScript. <br>
+                        In a team of 9, we used Visual Studio Team Services and Microsoft Azure. I programmed features in the back-end, API, as well as the
+                        front-end.</p>
                     </div>
                 </div>
             </div>
@@ -1116,10 +1135,10 @@
       });
 
       //Changing Header title depending on page lcoation
-      var aboutAnchor = $("#anchorAbout").offset().top - 100;
+      var aboutAnchor = $("#anchorAbout").offset().top - 50;
       var projectAnchor = $("#anchorProject").offset().top - 300;
       var careerAnchor = $("#anchorCareer").offset().top - 350;
-      var programAnchor = $("#anchorCareer").offset().top + 1050;
+      var programAnchor = $("#anchorCareer").offset().top + 950;
       document.getElementById("mainTitle").innerHTML = "";
       var $w = $(document).scroll(function(){
           if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
@@ -1135,19 +1154,36 @@
           }
       });
 
-      // Add slideDown animation to Bootstrap dropdown when collapsing.
-      $('.dropdown').on('show.bs.dropdown', function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-      });
-
-      // Add slideUp animation to Bootstrap dropdown when collapsing.
-      $('.dropdown').on('hide.bs.dropdown', function() {
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-      });
-
       $('#humina').hide();
 
       $(document).ready(function(){
+        $('[data-toggle="popover"]').popover()
+        $('#changeColourGrey').click(function(){
+          $(".fullcolorBackground").css("background-color","#1a1a1a");
+          $(".careerOutline").css("background-color","#1a1a1a");
+          $(".footier").css("background-color","#1a1a1a");
+        })
+        $('#changeColourGreen').click(function(){
+          $(".fullcolorBackground").css("background-color","#015249");
+          $(".careerOutline").css("background-color","#015249");
+          $(".footier").css("background-color","#015249");
+        })
+        $('#changeColourBlue').click(function(){
+          $(".fullcolorBackground").css("background-color","#254E70");
+          $(".careerOutline").css("background-color","#254E70");
+          $(".footier").css("background-color","#254E70");
+        })
+        $('#changeColourRed').click(function(){
+          $(".fullcolorBackground").css("background-color", "#9B1D20");
+          $(".careerOutline").css("background-color", "#9B1D20");
+          $(".footier").css("background-color","#9B1D20");
+        })
+        $('#changeColourPurp').click(function(){
+          $(".fullcolorBackground").css("background-color","#3A405A");
+          $(".careerOutline").css("background-color","#3A405A");
+          $(".footier").css("background-color","#3A405A");
+        })
+
         $('[data-toggle="tooltip"]').tooltip();
         $('#M').click(function(){
           $('#humina').show();
@@ -1194,7 +1230,6 @@
         $('#mobileTimeLine').hide();
       } else {
         $('.glyphicon-menu-hamburger').hide();
-        $('.dropdown').hide();
         $('#mainTitle').hide();
         $('#calCarousel').hide();
         $('#tourCarousel').hide();
@@ -1209,7 +1244,6 @@
       $(window).resize(function() {
         if ($(window).width() < 1024) {
           $('.glyphicon-menu-hamburger').hide();
-          $('.dropdown').hide();
           $('#mainTitle').hide();
           $('#calCarousel').hide();
           $('#tourCarousel').hide();
@@ -1236,7 +1270,6 @@
           $('#mobileProg').hide();
 
           $('#desktopProg').show();
-          $('.dropdown').show();
           $('#mainTitle').show();
           $('#calCarousel').show();
           $('#tourCarousel').show();

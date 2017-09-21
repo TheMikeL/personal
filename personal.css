@@ -1,6 +1,7 @@
 :root{
   --headingFont: "Poppins";
   --bodyFont: "Muli";
+  --backgroundcolor1: #1a1a1a;
 }
 
 html{
@@ -94,7 +95,7 @@ p{
 	padding-left: 15pt;
 	padding-right: 15pt;
 	width: 100%;
-	height: 530pt;
+	height: 100vh;
 }
 
 .careerOutline{
@@ -105,15 +106,7 @@ p{
 	width: 100%;
 	height: 100%;
   padding-bottom: 30pt;
-	background-color: #595959;
-}
-
-.aboutOutline{
-  position: relative;
-	padding-left: 15pt;
-	width: 100%;
-	height: 100%;
-	background-color: #66a3ff;
+	background-color: var(--backgroundcolor1);/*#595959;*/
 }
 
 .projOutline{
@@ -127,16 +120,29 @@ p{
 	background-color: white;
   z-index: 2;
 }
-
-.progOutline{
-	padding-left: 15pt;
-	padding-right: 15pt;
-  padding-top: 30px;
-	width: 100%;
-	height: 100%;
-  padding-bottom:30px;
-	background-color: white;
-  z-index: 2;
+@media (max-width: 1499px){
+  .progOutline{
+  	padding-left: 15pt;
+  	padding-right: 15pt;
+    padding-top: 30px;
+  	width: 100%;
+  	height: 100%;
+    padding-bottom:30px;
+  	background-color: white;
+    z-index: 2;
+  }
+}
+@media (min-width: 1500px) {
+  .progOutline{
+  	padding-left: 15pt;
+  	padding-right: 15pt;
+    padding-top: 100px;
+  	width: 100%;
+  	height: 100%;
+    padding-bottom:100px;
+  	background-color: white;
+    z-index: 2;
+  }
 }
 
 .expFormat{
@@ -149,7 +155,7 @@ p{
   	height: 115pt;
   	color: white;
   	padding-left:15pt;
-  	background-color: #333;
+  	background-color: var(--backgroundcolor1); /*#333;*/
     right: 0;
     left: 0;
   }
@@ -205,8 +211,7 @@ p{
 	font-size: 32pt;
 	text-align: center;
 	top: 50%;
-	color: #333;
-  background-color: #b3d1ff;
+	color: white;
 }
 
 .aboutHeadingL{
@@ -229,7 +234,7 @@ p{
   font-weight: 400;
 	font-size: 16pt;
 	text-align: left;
-	color: #333;
+	color: white;
 	top: 10%;
 }
 
@@ -242,8 +247,12 @@ p{
 }
 
 .aboutAdjust{
-  padding-top: 20pt;
+  padding-top: 15pt;
 }
+.aboutAdjustM{
+  padding-top: 25pt;
+}
+
 .aboutAdjustR{
   padding-top: 30pt;
 }
@@ -359,6 +368,7 @@ p{
   border-radius: 20pt;
 	margin-top: 30pt;
   outline: none;
+  border: none;
 	opacity: 1;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -387,6 +397,7 @@ p{
   border-radius: 20pt;
 	background-color: #111;
   outline: none;
+  border: none;
 	opacity: 1;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -414,6 +425,7 @@ p{
 	height: 350pt;
   border-radius: 20pt;
   outline: none;
+  border: none;
 	opacity: 1;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
@@ -444,6 +456,7 @@ p{
 	height: 350pt;
   border-radius: 20pt;
   outline: none;
+  border: none;
 	opacity: 1;
   -webkit-transition: all 0.6s ease;
   -moz-transition: all 0.6s ease;
@@ -502,9 +515,9 @@ p{
 }
 
 .bBold{
-  background-color:inherit;
+  background-color: transparent;
   border-style:none;
-  color: white;
+  color: transparent;
   text-decoration: none;
   font-size: 8pt;
 }
@@ -786,7 +799,7 @@ p{
 }
 
   .backHome{
-    padding-top: 3px;
+    padding-top: 3.5px;
     padding-left: 1px;
     text-align: center;
     position: fixed;
@@ -799,7 +812,65 @@ p{
     color: white;
     z-index: 1000;
   }
+  .chooseColourFirst{
+    padding-top: 3.5px;
+    padding-left: 1px;
+    position: fixed;
+    bottom: 10px;
+    right: 55px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid black;
+    z-index: 1000;
+    outline: none;
+    background-color: white;
+  }
+  .chooseColour{
+    padding-top: 3.5px;
+    padding-left: 1px;
+    position: fixed;
+    right: 55px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 3px solid black;
+    z-index: 1000;
+    outline: none;
+  }
 
+  .chooseColour:hover{
+    border-color: #ddd;
+  }
+
+  .chooseColour.GreyChoice{
+    background-color: var(--backgroundcolor1);
+    bottom: 40px;
+  }
+  .chooseColour.GreenChoice{
+    background-color: #015249;
+    bottom: 70px;
+  }
+  .chooseColour.BlueChoice{
+    background-color: #254E70;
+    bottom: 100px;
+  }
+  .chooseColour.RedChoice{
+    background-color: #9B1D20;
+    bottom: 130px;
+  }
+
+  .newDropdown{
+    position: absolute;
+    top: 100%;
+    z-index: 1000;
+    padding: 5px 0;
+    list-style: none;
+    background-color: #fff;
+    background-color: transparent;
+    width: 50px !important;
+    border: none !important;
+  }
 
 @media (max-width: 1024px) {
   .shaded{
@@ -814,13 +885,17 @@ p{
   }
 }
 
+.fullcolorBackground{
+background-color: var(--backgroundcolor1);
+}
 .leftAboutBox{
   padding-left: 30pt;
   padding-right: 30pt;
   margin-right: 0;
+  color: white;
   width: 100%;
   height: 275pt;
-  background-color: #b3d1ff;
+  /*background-color: var(--backgroundcolorA); /* #b3d1ff*/
 }
 
 .midAboutBox{
@@ -830,7 +905,7 @@ p{
   margin-left: 0;
   width: 100%;
   height: 275pt;
-  background-color: #777;
+  /*background-color: var(--backgroundcolorB); /*#777;*/
 }
 
 .rightAboutBox{
@@ -840,7 +915,7 @@ p{
   margin-left: 0;
   width: 100%;
   height: 275pt;
-  background-color: #ffad99;
+/*  background-color: var(--backgroundcolorC); /*#ffad99;*/
 }
 
 .rmlText{
