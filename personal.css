@@ -374,6 +374,9 @@ p{
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
+  -webkit-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
+  box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
 }
 
 .tourGuideProj:hover{
@@ -389,7 +392,7 @@ p{
 	transition: all 0.4s ease-in;
 }
 
-.rmlProj{
+.SUProj{
 	position: relative;
 	width: 300px;
 	height: 350pt;
@@ -403,9 +406,12 @@ p{
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
+  -webkit-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
+  box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
 }
 
-.rmlProj:hover{
+.SUProj:hover{
   padding: 3px;
   opacity: 0.8;
   -webkit-transition: all 0.8s ease-in;
@@ -431,6 +437,9 @@ p{
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
 	transition: all 0.4s ease-out;
+  -webkit-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
+  box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
 }
 
 .calendarProj:hover{
@@ -462,6 +471,9 @@ p{
   -moz-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
 	transition: all 0.6s ease;
+  -webkit-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
+  box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.75);
 }
 
 .personalProj:hover{
@@ -474,6 +486,7 @@ p{
   -moz-transition: all 0.6s ease-in;
   -o-transition: all 0.6s ease-in;
 	transition: all 0.6s ease-in;
+
 }
 
 .lIBtn{
@@ -811,6 +824,9 @@ p{
     background-color: black;
     color: white;
     z-index: 1000;
+    outline: none;-webkit-box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
   }
   .chooseColourFirst{
     padding-top: 3.5px;
@@ -825,6 +841,9 @@ p{
     z-index: 1000;
     outline: none;
     background-color: white;
+    outline: none;-webkit-box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
   }
   .chooseColour{
     padding-top: 3.5px;
@@ -836,7 +855,9 @@ p{
     border-radius: 100%;
     border: 3px solid black;
     z-index: 1000;
-    outline: none;
+    outline: none;-webkit-box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
+    box-shadow: 1px 5px 10px -1px rgba(0,0,0,0.75);
   }
 
   .chooseColour:hover{
@@ -918,7 +939,7 @@ background-color: var(--backgroundcolor1);
 /*  background-color: var(--backgroundcolorC); /*#ffad99;*/
 }
 
-.rmlText{
+.SUText{
   font-family: var(--bodyFont);
   font-weight: 400;
 	font-size: 14pt;
