@@ -221,14 +221,14 @@
         <div class = "row">
           <div class ="col-md-3 centerAll">
             <button type="button"
-            class = "tourGuideProj wow fadeIn" data-wow-offset="100" data-wow-duration="1s">
+            class = "projectPanel projectOne wow fadeIn" data-wow-offset="100" data-wow-duration="1s">
               <div data-toggle="modal" data-target="#tourModal" class ="projText wow fadeIn"
               data-wow-duration="1s" data-wow-delay="1s"> Queen's Tour Guide App</div>
             </button>
           </div>
           <div class ="col-md-3 centerAll">
             <button type="button"
-            class = "calendarProj wow fadeIn" data-wow-offset="100" data-wow-duration="1s" data-wow-delay="0.2s">
+            class = "projectPanel projectTwo wow fadeIn" data-wow-offset="100" data-wow-duration="1s" data-wow-delay="0.2s">
               <div data-toggle="modal" data-target="#calendarModal"
                 class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.2s">
                 QLife | CMPE 320
@@ -237,7 +237,7 @@
           </div>
           <div class ="col-md-3 centerAll">
             <button type="button"
-            class = "personalProj wow fadeIn" data-wow-offset="100" data-wow-duration="1s" data-wow-delay="0.4s">
+            class = "projectPanel projectThree wow fadeIn" data-wow-offset="100" data-wow-duration="1s" data-wow-delay="0.4s">
               <div data-toggle="modal" data-target="#personalModal"
                 class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.4s"> Personal Website
               </div>
@@ -245,10 +245,10 @@
           </div>
           <div class ="col-md-3 centerAll">
             <button type="button"
-            class = "SUProj wow fadeIn" data-wow-offset="100"  data-wow-duration="1s" data-wow-delay="0.8s">
+            class = "projectPanel projectFour wow fadeIn" data-wow-offset="100"  data-wow-duration="1s" data-wow-delay="0.8s">
               <div data-toggle="modal" data-target="#SUModal"
                 class ="projText wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
-                Muscle Bike
+                deliverAI
               </div>
             </button>
           </div>
@@ -881,7 +881,7 @@
                    </div>
 
                  </div>
-                 <div class = "col-md-6">
+                 <div class = "col-md-6 projectModalText">
                    <p>I worked in a group of 5 to create an Android application for Queen’s
                      University for the APSC 100 course. The application guides prospective
                      students and parents around Queen’s University in the absence of a tour
@@ -948,12 +948,12 @@
                      </a>
                    </div>
                  </div>
-                 <div class = "col-md-6">
+                 <div class = "col-md-6 projectModalTextLess">
                    <p> This project was created using C++ for the CMPE 320 course
                      in an Agile team of 5 others. The calendar based application
                      is designed to schedule any user-inputted tasks into the user’s
                      schedule. A pie graph is used to help illustrate the users’ weekly
-                     activities. The Aap would recommend activities to balance
+                     activities. The app would recommend activities to balance
                      their lifestyle based on their schedule. <br><br>
                      I made initial drawings of the application and the team decided
                      to move forward with my design, shown on the left. I worked in
@@ -1011,7 +1011,7 @@
                    </div>
 
                  </div>
-                 <div class = "col-md-6">
+                 <div class = "col-md-6 projectModalText">
                    <p>I wanted to design a personal website to learn the key concepts of web design.
                       Many hours were spent researching UX/UI design in order to create a great site.
                       I drew an initial design of the site in my second year of University, however,
@@ -1034,14 +1034,52 @@
            <div class="modal-content">
              <div class="modal-header">
                <button type="button" class="close" data-dismiss="modal">&times;</button>
-               <h4 class="modal-title"> Muscle Bike | In-Development</h4>
+               <h4 class="modal-title"> deliverAI | Hack Western 4 (Hackathon) | November 2017</h4>
              </div>
              <div class="modal-body">
                <div class="row">
-                 <div class = "col-md-2"></div>
-                 <div class = "col-md-8">
-                   <div class="rmlText">The project is currently in the development phase.<br><br>
-                    The application is designed for cycling enthusiasts that want to improve their cycling efficiency.</div>
+                 <div class = "col-md-6"><!--Picture Carousel-->
+                   <div id="personalCarousel" class="carousel slide" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                       <li data-target="#personalCarousel" data-slide-to="0" class="active"></li>
+                       <li data-target="#personalCarousel" data-slide-to="1"></li>
+                       <li data-target="#personalCarousel" data-slide-to="2"></li>
+                     </ol>
+
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner">
+                       <div class="item active">
+                         <img src="projects/personal/personalDesignPage.png" class="carouselPic" data-toggle="modal" data-target="#personal1Modal">
+                       </div>
+
+                       <div class="item">
+                         <img src="projects/personal/V1.png" class="carouselPic">
+                       </div>
+
+                       <div class="item">
+                         <img src="projects/personal/V2.png" class="carouselPic" data-toggle="modal" data-target="#personal2Modal">
+                       </div>
+                     </div>
+
+                     <!-- Left and right controls -->
+                     <a class="left carousel-control" href="#personalCarousel" data-slide= "prev">
+                       <span class="glyphicon glyphicon-chevron-left"></span>
+
+                     </a>
+                     <a class="right carousel-control" href="#personalCarousel  " data-slide="next">
+                       <span class="glyphicon glyphicon-chevron-right"></span>
+                     </a>
+                   </div>
+
+                 </div>
+                 <div class = "col-md-6 projectModalText">
+                   <p>DeliverAI is a simulation of a self-driving car delivery system. It delivers packages
+                     to the customer's address and features facial recognition as a method of authentication.<br><br>
+                     I focused on the web application and hardware assembly for the project. I created original designs for the web application,
+                     implemented a real-time database using Firebase, and helped implement the Webcam API for sign up. <br><br>
+                     Further documentation can be found in the <a href="https://devpost.com/software/deliverai-k8ruv4" target="_blank">DevPost.</a>
+                     In addition the code can be found on <a href="https://github.com/DeliverAI" target="_blank">Github</a>. </p>
                  </div>
                </div>
              </div>
