@@ -6,10 +6,6 @@ to be a learning tool to get a deeper understanding of website
 design as well as HTML, CSS, JQuery and Bootstrap. Wow.js and
 Animate.css were used for the animations in the page.
 
-## timeline
-A bootstrap timeline library was used and modified to my personal taste. The documentation can be found here:
-https://github.com/sanex3339/bootstrap-responsive-timeline
-
 ## git
 The master branch is the only online branch. However, local branches: about, career, home, misc, prog, and project were used on a computer. This was done to practice working on branches even without remote branching.
 
@@ -25,6 +21,10 @@ Some decisions(D) and problems(P) include:
 Decision(D). A vertical carousel vs. a hamburger menu to skip to certain sections. <br>
 Result(R). Ultimately, the hamburger menu was chosen because of the ability to choose and see sections.
 
+D. Removal of the timeline. <br>
+R. I decided that the overall website is better as a showcase rather than a life story. I wanted the design aspects and
+my abilities and projects to shine as opposed to boring the user with a lengthy timeline.
+
 D. Having a direct mailto function vs. modal for copy and paste option as well as mailto. <br>
 R. Although mailto is very convenient, not all users use a desktop mail application which can cause frustration (personal issue). Therefore, the modal option provides a copy and paste function as well as mailto function when clicking the mail button.
 
@@ -33,9 +33,6 @@ R. Originally, there was a lot of planning, as shown in the project section, for
 
 D. Title of the section in the header bar vs. on the section. <br>
 R. I thought of an idea to have the header change text based on the location of the scroll in order to match up with the section. Very simple feature that I believe is quite nice. However, with smaller screens, difficulties were present, so the title of the section was placed directly on the page for smaller screens.
-
-D. Ability to move to the top of the page. <br>
-R. Originally, my name at the top left was used to reach the top of the page. However, it is not obvious to the user. As a result, a "top of the page" button was placed at the bottom right to allow for this feature to be more obvious. The original functionality is still available at the name.
 
 P. Not all users know the symbols of the programs. <br>
 R. Tooltips were added when the symbol is hovered over.
