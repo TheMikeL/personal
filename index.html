@@ -19,7 +19,9 @@
     <!-- CSS Dependecies-->
     <link rel="stylesheet" href="dependencies/bootstrapFull/dist/css/bootstrap.css">
     <link rel="stylesheet" href="dependencies/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/1f36d2fe54.css" media="all" >
     <link rel="stylesheet" href="personal.css">
+
 
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400|Poppins:300,400" rel="stylesheet">
 
@@ -28,6 +30,7 @@
     <script type="text/javascript" src="dependencies/jquery-ui.js"></script>
     <script type="text/javascript" src="dependencies/bootstrapFull/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="dependencies/bootstrapFull/js/carousel.js"></script>
+    <script src="https://use.fontawesome.com/1f36d2fe54.js"></script>
     <script src="dependencies/wow.min.js"></script>
 
     <link rel="shortcut icon" href="other/TabPic.png"/>
@@ -44,7 +47,6 @@
                 <span class="icon-bar"></span>
             </button>
           </div>
-
           <div class = "mainTitleCenter">
             <li><div id="mainTitle" class="headerTitleDark"></div></li>
           </div>
@@ -67,14 +69,17 @@
     <div class="container-fluid noContainerPad">
       <a class="anchor" id="anchorHome"></a>
       <div class="row homeOutline noMargin homeBackground">
-        <div class = "WelcomeHeaderMobile wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
-        	Welcome
+        <div class = "WelcomeHeaderMobile wow fadeInRight" data-wow-duration="3s" >
+        	Welcome<br> Michael here!
         </div>
         <div class = "WelcomeHeader wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.4s" >
         	Welcome <br>
         </div>
         <div class = "WelcomeHeader wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" >
-        Let's Take a Journey!
+          Michael here!
+        </div>
+        <div class="centerAll">
+          <div class="arrow-bounce-animation"><a href="#anchorAbout"><i class="fa fa-angle-down fa-5x arrow-colour"></i></a></div>
         </div>
       </div>
       <a href="#anchorHome">
@@ -195,6 +200,49 @@
 
       <!-- Project Section-->
       <a class="anchor" id="anchorProject"></a>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="col-md-6">
+            <div class= "project-square">
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class= "project-square">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-6">
+              <div class= "project-square">
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class= "project-square">
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+            <div class="col-md-6">
+              <div class= "project-square">
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class= "project-square">
+
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
       <div class ="row projOutline noMargin">
         <div class ="row">
           <div id= "projectHeading" class="whiteHeader">
@@ -418,15 +466,19 @@
         <br>
         <div class="row">
           <div class= "footerText">
-            <a href="https://www.linkedin.com/in/michael-lam-696009112" target="_blank">
-              <img src="contact/linkedIn.png" class="lIBtn"/>
-            </a>
-            <a href="https://github.com/TheMikeL/" target="_blank">
-              <img src="contact/Git.png" class="gitBtn"/>
-            </a>
-            <a href="#" data-toggle="modal" data-target="#emailModal">
-              <img src="contact/Email.png" class="emailBtn"/>
-            </a>
+            <div class="row">
+              <a title="My LinkedIn" class="contact-link" href="https://www.linkedin.com/in/michael-lam-696009112" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a title="My Github"class="contact-link" href="https://github.com/TheMikeL/" target="_blank">
+                <i class="fa fa-github"></i>
+              </a>
+            </div>
+            <div class="row">
+              <a title="Email Me" class="email-text" href="mailto:mikekmlam@gmail.com" target="_blank">
+                mikekmlam@gmail.com
+              </a>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -756,26 +808,6 @@
          </div>
         </div>
 
-        <!-- Modal for the mail button to reveal email-->
-        <div class="modal fade modalDown" id="emailModal" role="dialog">
-           <div class="modal-dialog">
-             <!-- Modal content-->
-             <div class="modal-content">
-               <div class="modal-header">
-                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-               </div>
-               <div class="modal-body">
-                 <div class="centerAll">
-                   <!-- Option to open mail application to mail me-->
-                   <a href="mailto:mikekmlam@gmail.com" target="_blank">
-                     <img class="mailToButton" src="contact/Email.png"/>
-                   </a>
-                   <h2> mikekmlam@gmail.com </h2>
-                 </div>
-               </div>
-             </div>
-           </div>
-        </div>
 
     <script>
       //Initialize the WOW animations
@@ -836,6 +868,9 @@
             "transform" : "translate(0px, "+ scroll * 1.2 + "%)"
         });
         $(".WelcomeHeaderMobile").css({
+            "opacity" : 1-(scroll / 600)
+        });
+        $(".arrow-colour").css({
             "opacity" : 1-(scroll / 600)
         });
         if ($(document).scrollTop() > 150){
