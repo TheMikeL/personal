@@ -19,7 +19,11 @@
     <!-- CSS Dependecies-->
     <link rel="stylesheet" href="dependencies/bootstrapFull/dist/css/bootstrap.css">
     <link rel="stylesheet" href="dependencies/animate.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://use.fontawesome.com/1f36d2fe54.css" media="all" >
+=======
+    <link rel="stylesheet" href="dependencies/bootstrap-timeline/timeline.css">
+>>>>>>> parent of 62fe91e... Removed Timeline
     <link rel="stylesheet" href="personal.css">
 
 
@@ -55,6 +59,7 @@
             <div class="nav navbar-nav navbar-right">
                  <li> <a class="navBarLinks" href="#anchorAbout">About</a> </li>
                  <li> <a class="navBarLinks" href="#anchorProject">Projects</a> </li>
+                 <li> <a class="navBarLinks" href="#anchorCareer">Career</a> </li>
                  <li> <a class="navBarLinks" href="#anchorProgram">Programming</a> </li>
                  <li> <a class="navBarLinks" href="#anchorContact">Contact</a> </li>
             </div>
@@ -87,7 +92,23 @@
             <span class="glyphicon glyphicon-chevron-up"></span>
         </div>
       </a>
-
+      <div class="dropup">
+        <button class="chooseColourFirst dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">  </button>
+        <div class="dropdown-menu newDropdown">
+          <div class="row">
+            <button id="changeColourGrey" class="chooseColour GreyChoice"></button>
+          </div>
+          <div class="row">
+            <button id="changeColourGreen" class="chooseColour GreenChoice"></button>
+          </div>
+          <div class="row">
+            <button id="changeColourBlue" class="chooseColour BlueChoice"></button>
+          </div>
+          <div class="row">
+            <button id="changeColourRed" class="chooseColour RedChoice"></button>
+          </div>
+        </div>
+      </div>
       <!-- About Section-->
       <a class="anchor" id="anchorAbout"></a>
       <div class=" row noMargin">
@@ -185,12 +206,11 @@
           </div>
           <!--If you are on this list. I want to thank you for influencing my life in some sort of way.
               My experience with you has shaped me to who I am this day.-->
-              <p style="color:white" id="humina">Thank you: Ju.K | Jo.C | Ste.M | Bl.P | Jac.L | And.K | Joo.L |
-                  Nat.I | Cla.L | Ni.K | Stel.K | Da.L
-                  Al.Z | Ga.M | El.G | Na.Y | Joh.E | Dim.K | Sa.P | Mic.T | Jen.N | Me.U |
-                  Al.B | Ev.K | Ma.L | Lo.L | Da.L | Wy.W | Na.W | Al.K | Ju.N | Ra.L | Chr.T |
-                  Chr.M | Vi.L | Sh.H |La.V | Ak.P | Co.C | Jo.C | Be.C | Lau.S | Th.M | Ki.M |
-                  An.S | Ti.Y | Ja.H</p>
+          <p style="color:white" id="humina">Thank you: Ju.K | Jo.C | Ste.M | Bl.P | Jac.L | And.K | Joo.L |
+              Nat.I | Cla.L | Ni.K | Stel.K | Da.L
+              Al.Z | Ga.M | El.G | Nan.Y | Joh.E | Dim.K | Sa.P | Mich.T | Jen.N | Mel.U |
+              Al.B | Ev.K | Ma.L | Lo.L | Da.L | Wy.W | Na.W | Al.K | Ju.N | Ra.L | Chr. T |
+              Chr.M | Vi.L | Sh.H |La.V | Ak.P | Co.C | Jo.C | Be.C | Lau.S | Th.M </p>
         </div>
         <!-- <a href="ty.html"> -->
           <div id="M" class="bBold">Hey What's Up</div>
@@ -283,6 +303,381 @@
               </div>
             </button>
           </div>
+        </div>
+      </div>
+
+      <!-- Career section-->
+      <a class="anchor" id="anchorCareer"></a>
+      <div class="row careerOutline noMargin">
+        <div class="row">
+          <div id="careerHeading" class = "blackHeader">
+            Career
+          </div>
+          <!-- Legend for the Timeline -->
+          <div id="Legend" class="legendBox">
+            <div class="col-md-4">
+              <div class="legendPoint legendPoint-vol"></div>
+            </div>
+            <div class="col-md-8 legendText">
+              Volunteer Experience
+            </div>
+            <div class="col-md-4">
+              <div class="legendPoint legendPoint-work"></div>
+            </div>
+            <div class="col-md-8 legendText">
+              Work Experience
+            </div>
+            <div class="col-md-4">
+              <div class="legendPoint legendPoint-school"></div>
+            </div>
+            <div class="col-md-8 legendText">
+              School
+            </div>
+          </div>
+
+          <!--Timeline event using the bootstrap-timeline library-->
+          <div id="desktopTimeLine" class="timeline timeline-line-solid wow fadeInDownBig" data-wow-offset="-300" data-wow-duration="1s">
+            <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s">
+                <span class="label label-primary">Past</span>
+            </span>
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s">
+                <div class="timeline-point timeline-point-vol">
+                </div>
+                <div class="timeline-event wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4 data-toggle="tooltip">Sidney Ledson Institute | Teaching Assistant | July 2012 - Aug 2012</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Assisted teachers with their classes ranging from pre-school to grade 6.</p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s">
+                <span class="label label-primary">2014</span>
+            </span>
+
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s">
+                <div class="timeline-point timeline-point-school">
+                </div>
+                <div class="timeline-event wow fadeInLeftC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Queen's University | Computer Engineering | Expected Graduation: 2018</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <div class="row">
+                        <div class="col-md-3"><b>First Year</b></div>
+                        <div class="col-md-3"><b>Second Year</b></div>
+                        <div class="col-md-3"><b>Third Year</b></div>
+                        <div class="col-md-3"><b>Fourth Year</b></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-3">-Engineering Practice <br>
+                          -Mechanics <br> -Physics 2<br>
+                          -Chemistry 1 & 2 <br> -Calculus 1 & 2 </div>
+                        <div class="col-md-3">-Electric Circuits <br>
+                        -Discrete Math <br> -Digital Systems <br>
+                        -Comp Architecture <br> -Data Structures <br>
+                        -Electromagnetics <br> -Engineering Econ </div>
+                        <div class="col-md-3"> -Fund. Soft. Dev. <br>
+                        -Human&Comp  Interaction<br> -Databases <br> -Algorithms <br>
+                        -Probability <br> -Networks <br> -Microprocessors </div>
+                        <div class="col-md-3"> Courses: TBD</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <span class="label label-primary">2015</span>
+            </span>
+
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <div class="timeline-point timeline-point-work">
+                </div>
+                <div class="timeline-event wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Toyota | Employee | May 2015 - Aug 2015</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Received, sorted, counted and verified incoming shipments of car
+                          parts with the documentation and orders to ensure accuracy and
+                          quality of parts for stock and distribution.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <div class="timeline-point timeline-point-work">
+                </div>
+                <div class="timeline-event  wow fadeInLeftC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Queen's University | Programmer | May 2015 - Nov 2015</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Application is now available on the Google Play Store:
+                          <a href="https://play.google.com/store/apps/details?id=com.QueensUFEAS.ryan.queensutour" target="_blank">QEng Tour.</a> <br>
+                          Collaborated with Queen’s University to address their needs for an application to lead
+                          new students around campus, and the application is currently used by Queen’s University.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <div class="timeline-point timeline-point-vol"></div>
+                <div class="timeline-event  wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Queen's University | Engineering Open House Volunteer | Nov 2015 - Present</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Spoke with prospective students about Queen’s
+                          University’s engineering program, extra-curricular activities and community.</p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <span class="label label-primary">2016</span>
+            </span>
+
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <div class="timeline-point timeline-point-work">
+                </div>
+                <div class="timeline-event  wow fadeInLeftC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Linda Modern Thai | Bartender/Server | May 2016 - June 2016</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Prepared fresh and pre-made drinks and served customers at the bar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <div class="timeline-point timeline-point-work"></div>
+                <div class="timeline-event  wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Lindt Chocolate Store | Sales Associate| May 2016 - June 2016</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Assisted customers with finding chocolate
+                          for their situation and processed cash and card
+                          transactions at the register</p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="timeline-label wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <span class="label label-primary">2017</span>
+            </span>
+
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s" >
+                <div class="timeline-point timeline-point-vol">
+                </div>
+                <div class="timeline-event wow fadeInLeftC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4> AIESEC Queen's | Exchange Participant Manager | January 2017 - September 2017</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Conducted 1-on-1 consultations with potential
+                          exchange participants to connect them with internship
+                          opportunities abroad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item wow fadeInDownC" data-wow-offset="30" data-wow-duration="1s">
+                <div class="timeline-point timeline-point-work">
+                </div>
+                <div class="timeline-event wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4> Government of Ontario | IT Systems Assistant - Web Development Assistant | May 2017 - Aug 2017</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Worked on web projects using Angular 2.0, C#, .Net, HTML5, CSS3, Typescript, SharePoint and JavaScript. <br>
+                        In a team of 9, we used Visual Studio Team Services and Microsoft Azure. I programmed features in the back-end, API, as well as the
+                        front-end.</p>
+                    </div>
+                </div>
+            </div>
+            <span class="timeline-label wow fadeInUp" data-wow-offset="30" data-wow-duration="1s" >
+                <span class="label label-primary">Present</span>
+            </span>
+          </div>
+
+          <!-- Mobile Timeline -->
+          <div id="mobileTimeLine" class="timeline timeline-line-solid">
+            <span class="timeline-label">
+                <span class="label label-primary">Past</span>
+            </span>
+            <div class="timeline-item" >
+                <div class="timeline-point timeline-point-vol">
+                </div>
+                <div class="timeline-event wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4 data-toggle="tooltip">Sidney Ledson Institute | Teaching Assistant | July 2012 - Aug 2012</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Assisted teachers with their classes ranging from pre-school to grade 6.</p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="timeline-label" >
+                <span class="label label-primary">2014</span>
+            </span>
+
+            <div class="timeline-item" >
+                <div class="timeline-point timeline-point-school">
+                </div>
+                <div class="timeline-event wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Queen's University | Computer Engineering | Expected Graduation: 2018</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>First Year consisted of a general Engineering program which included Physics, Calculus, Chemistry
+                        and Programming. Following first year, I specialized in Computer Engineering (Software).
+                        This allowed me to gain experience with both software and hardware.</p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="timeline-label" >
+                <span class="label label-primary">2015</span>
+            </span>
+
+            <div class="timeline-item" >
+                <div class="timeline-point timeline-point-work">
+                </div>
+                <div class="timeline-event wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Toyota | Employee | May 2015 - Aug 2015</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Received, sorted, counted and verified incoming shipments of car
+                          parts with the documentation and orders to ensure accuracy and
+                          quality of parts for stock and distribution.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item" >
+                <div class="timeline-point timeline-point-work">
+                </div>
+                <div class="timeline-event  wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Queen's University | Programmer | May 2015 - Nov 2015</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Application is now available on the Google Play Store:
+                          <a href="https://play.google.com/store/apps/details?id=com.QueensUFEAS.ryan.queensutour" target="_blank">QEng Tour.</a> <br>
+                          Collaborated with Queen’s University to address their needs for an application to lead
+                          new students around campus, and the application is currently used by Queen’s University.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item" >
+                <div class="timeline-point timeline-point-vol"></div>
+                <div class="timeline-event  wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Queen's University | Engineering Open House Volunteer | Nov 2015 - Present</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Spoke with prospective students about Queen’s
+                          University’s engineering program, extra-curricular activities and community.</p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="timeline-label" >
+                <span class="label label-primary">2016</span>
+            </span>
+
+            <div class="timeline-item" >
+                <div class="timeline-point timeline-point-work">
+                </div>
+                <div class="timeline-event  wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Linda Modern Thai | Bartender/Server | May 2016 - June 2016</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Prepared fresh and pre-made drinks and served customers at the bar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item" >
+                <div class="timeline-point timeline-point-work"></div>
+                <div class="timeline-event  wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4>Lindt Chocolate Store | Sales Associate| May 2016 - June 2016</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Assisted customers with finding chocolate
+                          for their situation and processed cash and card
+                          transactions at the register</p>
+                    </div>
+                </div>
+            </div>
+
+            <span class="timeline-label" >
+                <span class="label label-primary">2017</span>
+            </span>
+
+            <div class="timeline-item" >
+                <div class="timeline-point timeline-point-vol">
+                </div>
+                <div class="timeline-event wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4> AIESEC Queen's | Exchange Participant Manager | January 2017 - September 2017</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Conducted 1-on-1 consultations with potential
+                          exchange participants to connect them with internship
+                          opportunities abroad.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-point timeline-point-work">
+                </div>
+                <div class="timeline-event wow fadeInRightC" data-wow-offset="30"
+                data-wow-duration="1s" data-wow-delay="0.6s">
+                    <div class="timeline-heading">
+                        <h4> Government of Ontario | IT Systems Assistant - Web Development Assistant | May 2017 - Aug 2017</h4>
+                    </div>
+                    <div class="timeline-body">
+                        <p>Working on web projects using Angular 2.0, C#, .Net, HTML5, CSS3, and JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+            <span class="timeline-label" >
+                <span class="label label-primary">Present</span>
+            </span>
+          </div>
+
+
         </div>
       </div>
 
@@ -608,7 +1003,7 @@
                      </a>
                    </div>
                  </div>
-                 <div class = "col-md-6 projectModalText">
+                 <div class = "col-md-6 projectModalTextLess">
                    <p> This project was created using C++ for the CMPE 320 course
                      in an Agile team of 5 others. The calendar based application
                      is designed to schedule any user-inputted tasks into the user’s
@@ -823,14 +1218,17 @@
       //Changing Header title depending on page lcoation
       var aboutAnchor = $("#anchorAbout").offset().top - 50;
       var projectAnchor = $("#anchorProject").offset().top - 300;
-      var programAnchor = $("#anchorProject").offset().top + 350;
+      var careerAnchor = $("#anchorCareer").offset().top - 350;
+      var programAnchor = $("#anchorCareer").offset().top + 950;
       document.getElementById("mainTitle").innerHTML = "";
       var $w = $(document).scroll(function(){
           if ( $w.scrollTop() > aboutAnchor && $w.scrollTop() < projectAnchor) {
             document.getElementById("mainTitle").innerHTML = "About Me";
-          } else if ( $w.scrollTop() > projectAnchor && $w.scrollTop() < programAnchor ) {
+          } else if ( $w.scrollTop() > projectAnchor && $w.scrollTop() < careerAnchor ) {
             document.getElementById("mainTitle").innerHTML = "Projects";
-          }  else if ( $w.scrollTop() > programAnchor ) {
+          } else if ( $w.scrollTop() > careerAnchor && $w.scrollTop() < programAnchor ) {
+            document.getElementById("mainTitle").innerHTML = "Career";
+          } else if ( $w.scrollTop() > programAnchor ) {
             document.getElementById("mainTitle").innerHTML = "Programming Experience";
           } else {
             document.getElementById("mainTitle").innerHTML = "";
@@ -841,6 +1239,31 @@
 
       $(document).ready(function(){
         $('[data-toggle="popover"]').popover()
+        $('#changeColourGrey').click(function(){
+          $(".fullcolorBackground").css("background-color","#1a1a1a");
+          $(".careerOutline").css("background-color","#1a1a1a");
+          $(".footier").css("background-color","#1a1a1a");
+        })
+        $('#changeColourGreen').click(function(){
+          $(".fullcolorBackground").css("background-color","#015249");
+          $(".careerOutline").css("background-color","#015249");
+          $(".footier").css("background-color","#015249");
+        })
+        $('#changeColourBlue').click(function(){
+          $(".fullcolorBackground").css("background-color","#254E70");
+          $(".careerOutline").css("background-color","#254E70");
+          $(".footier").css("background-color","#254E70");
+        })
+        $('#changeColourRed').click(function(){
+          $(".fullcolorBackground").css("background-color", "#9B1D20");
+          $(".careerOutline").css("background-color", "#9B1D20");
+          $(".footier").css("background-color","#9B1D20");
+        })
+        $('#changeColourPurp').click(function(){
+          $(".fullcolorBackground").css("background-color","#3A405A");
+          $(".careerOutline").css("background-color","#3A405A");
+          $(".footier").css("background-color","#3A405A");
+        })
 
         $('[data-toggle="tooltip"]').tooltip();
         $('#M').click(function(){
@@ -884,9 +1307,11 @@
       if ($(window).width() > 1024) {
         $('#aboutHeading').hide();
         $('#projectHeading').hide();
+        $('#careerHeading').hide();
         $('#progHeading').hide();
         $('.WelcomeHeaderMobile').hide();
         $('#mobileProg').hide();
+        $('#mobileTimeLine').hide();
       } else {
         $('.glyphicon-menu-hamburger').hide();
         $('#mainTitle').hide();
@@ -896,6 +1321,7 @@
         $('#Legend').hide();
         $('.WelcomeHeader').hide();
         $('#desktopProg').hide();
+        $('#desktopTimeLine').hide();
       }
 
       //Allow for screen resizing for responsiveness
@@ -909,17 +1335,22 @@
           $('#Legend').hide();
           $('#desktopProg').hide();
           $('.WelcomeHeader').hide();
+          $('#desktopTimeLine').hide();
 
           $('.WelcomeHeaderMobile').show();
           $('#aboutHeading').show();
           $('#projectHeading').show();
+          $('#careerHeading').show();
           $('#progHeading').show();
           $('#mobileProg').show();
+          $('#mobileTimeLine').show();
         } else {
           $('.WelcomeHeaderMobile').hide();
           $('#aboutHeading').hide();
           $('#projectHeading').hide();
+          $('#careerHeading').hide();
           $('#progHeading').hide();
+          $('#mobileTimeLine').hide();
           $('#mobileProg').hide();
 
           $('#desktopProg').show();
@@ -930,6 +1361,7 @@
           $('#Legend').show();
           $('.WelcomeHeader').show();
           $('.glyphicon-menu-hamburger').show();
+          $('#desktopTimeLine').show();
           }
       });
 
